@@ -1,2 +1,9 @@
 *.pyc
 high_level_api/datasets/*
+
+rnn/._masc_500k_texts
+rnn/masc_500k_texts.tgz
+rnn/masc_500k_texts
+rnn/corpus
+rnn/data
+rnn/log
