@@ -12,6 +12,101 @@ import tensorflow as tf
 from .utils import iterator_utils
 from .utils import vocab_utils
 
+def get_initializer(init_op, seed=None, init_weight=None):
+    if init_op == "uniform":
+        assert init_weight
+        return tf.random_uniform_initializer(
+            -init_weight, init_weight, seed=seed)
+    elif init_op == "glorot_normal":
+        return tf.keras.initializers.glorot_normal(seed=seed)
+    elif init_op == "glorot_uniform":
+        return tf.keras.initializers.glorot_uniform(seed=seed)
+    else:
+        raise ValueError("Unknown init_op %s" % init_op)
+
+def create_emb_for_encoder_and_decoder(share_vocab,
+                                       src_vocab_size,
+                                       tgt_vocab_size,
+                                       src_embed_size,
+                                       tgt_embed_size,
+                                       dtype=tf.float32,
+                                       src_vocab_file,
+                                       tgt_vocab_file):
+    partitioner = None
+
+    with tf.variable_scope("embeddings", dtype=dtype, partitioner=partitioner) as scope:
+        # Share embedding
+        if share_vocab:
+            if src_vocab_size != tgt_vocab_size:
+                raise ValueError("Share embedding but different src/tgt vocab size"
+                                 " %d vs. %d" % (src_vocab_size, tgt_vocab_size))
+            assert src_embed_size == tgt_embed_size
+            print("# Use the same embedding for source and target")
+            vocab_file = src_vocab_file or tgt_vocab_file
+
+            embedding_encoder = _create_or_load_embed("embedding_share", vocab_file, src_vocab_size, src_embed_size, dtype)
+            embedding_decoder = embedding_encoder
+        else:
+            with tf.variable_scope("encoder", partitioner=partitioner):
+                embedding_encoder = _create_or_load_embed("embedding_encoder", src_vocab_file, src_vocab_size, src_embed_size, dtype)
+            with tf.variable_scope("decoder", partitioner=partitioner):
+                embedding_decoder = _create_or_load_embed("embedding_decoder", tgt_vocab_file, tgt_vocab_size, tgt_embed_size, dtype)
+
+    return embedding_encoder, embedding_decoder
+
+def _create_or_load_embed(embed_name, vocab_file, vocab_size, embed_size, dtype):
+    with tf.device("/cpu:0"):
+        embedding = tf.get_variable(embed_name, [vocab_size, embed_size], dtype)
+    return embedding
+
+def create_rnn_cell(unit_type, num_units, num_layers, forget_bias, dropout, mode, single_cell_fn=None):
+    cell_list;
+    if len(cell_list) == 1:  # Single layer.
+        return cell_list[0]
+    else:  # Multi layers
+        return tf.contrib.rnn.MultiRNNCell(cell_list)
+
+def _cell_list(unit_type, num_units, num_layers, forget_bias, dropout, mode, single_cell_fn=None):
+    if not single_cell_fn:
+        single_cell_fn = _single_cell
+
+    cell_list = []
+    for i range(num_layers):
+        print("  cell %d" % i, end="", file=sys.stdout)
+        single_cell = single_cell_fn(
+            unit_type=unit_type,
+            num_units=num_units,
+            forget_bias=forget_bias,
+            dropout=dropout,
+            mode=mode
+        )
+        print("")
+        cell_list.append(cell)
+
+    return cell_list
+
+def _single_cell(unit_type, num_units, forget_bias, dropout, mode):
+    dropout = dropout if mode == tf.estimator.ModeKeys.TRAIN else 0.0
+
+    # Cell Type
+    if unit_type == "lstm":
+        print("  LSTM, forget_bias=%g" % forget_bias)
+        single_cell = tf.contrib.rnn.BasicLSTMCell(
+            num_units,
+            forget_bias=forget_bias)
+    elif unit_type == "gru":
+        print("  GRU")
+        single_cell = tf.contrib.rnn.GRUCell(num_units)
+    else:
+        raise ValueError("Unknown unit type %s!" % unit_type)
+
+    # Dropout (= 1 - keep_prob)
+    if self.dropout > 0.0:
+        single_cell = tf.contrib.rnn.DropoutWrapper(cell=single_cell, input_keep_prob=(1.0 - dropout))
+        print("  %s, dropout=%g " % (type(single_cell).__name__, dropout))
+
+    return single_cell
+
 class TrainModel(
         collections.namedtuple("TrainModel", ("graph", "model", "iterator"))):
     pass
