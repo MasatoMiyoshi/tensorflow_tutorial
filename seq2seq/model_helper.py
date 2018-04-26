@@ -9,8 +9,9 @@ import collections
 import numpy as np
 import tensorflow as tf
 
-from .utils import iterator_utils
-from .utils import vocab_utils
+from utils import iterator_utils
+from utils import vocab_utils
+from utils import misc_utils as utils
 
 def get_initializer(init_op, seed=None, init_weight=None):
     if init_op == "uniform":
@@ -30,8 +31,8 @@ def create_emb_for_encoder_and_decoder(share_vocab,
                                        src_embed_size,
                                        tgt_embed_size,
                                        dtype=tf.float32,
-                                       src_vocab_file,
-                                       tgt_vocab_file):
+                                       src_vocab_file=None,
+                                       tgt_vocab_file=None):
     partitioner = None
 
     with tf.variable_scope("embeddings", dtype=dtype, partitioner=partitioner) as scope:
@@ -60,7 +61,14 @@ def _create_or_load_embed(embed_name, vocab_file, vocab_size, embed_size, dtype)
     return embedding
 
 def create_rnn_cell(unit_type, num_units, num_layers, forget_bias, dropout, mode, single_cell_fn=None):
-    cell_list;
+    cell_list = _cell_list(unit_type=unit_type,
+                           num_units=num_units,
+                           num_layers=num_layers,
+                           forget_bias=forget_bias,
+                           dropout=dropout,
+                           mode=mode,
+                           single_cell_fn=single_cell_fn)
+
     if len(cell_list) == 1:  # Single layer.
         return cell_list[0]
     else:  # Multi layers
@@ -71,8 +79,8 @@ def _cell_list(unit_type, num_units, num_layers, forget_bias, dropout, mode, sin
         single_cell_fn = _single_cell
 
     cell_list = []
-    for i range(num_layers):
-        print("  cell %d" % i, end="", file=sys.stdout)
+    for i in range(num_layers):
+        utils.print_out("  cell %d" % i, new_line=False)
         single_cell = single_cell_fn(
             unit_type=unit_type,
             num_units=num_units,
@@ -80,8 +88,8 @@ def _cell_list(unit_type, num_units, num_layers, forget_bias, dropout, mode, sin
             dropout=dropout,
             mode=mode
         )
-        print("")
-        cell_list.append(cell)
+        utils.print_out("")
+        cell_list.append(single_cell)
 
     return cell_list
 
@@ -101,17 +109,27 @@ def _single_cell(unit_type, num_units, forget_bias, dropout, mode):
         raise ValueError("Unknown unit type %s!" % unit_type)
 
     # Dropout (= 1 - keep_prob)
-    if self.dropout > 0.0:
+    if dropout > 0.0:
         single_cell = tf.contrib.rnn.DropoutWrapper(cell=single_cell, input_keep_prob=(1.0 - dropout))
         print("  %s, dropout=%g " % (type(single_cell).__name__, dropout))
 
     return single_cell
 
+def gradient_clip(gradients, max_gradient_norm):
+    """Clipping gradients of a model."""
+    clipped_gradients, gradient_norm = tf.clip_by_global_norm(gradients, max_gradient_norm)
+    gradient_norm_summary = [tf.summary.scalar("grad_norm", gradient_norm)]
+    gradient_norm_summary.append(tf.summary.scalar("clipped_gradient", tf.global_norm(clipped_gradients)))
+
+    return clipped_gradients, gradient_norm_summary, gradient_norm
+
 class TrainModel(
-        collections.namedtuple("TrainModel", ("graph", "model", "iterator"))):
+        collections.namedtuple("TrainModel", ("graph", "model", "iterator",
+                                              "skip_count_placeholder"))):
     pass
 
 def create_train_model(model_creator, hparams):
+    """Create train graph, model, and iterator."""
     src_file = hparams.src_file
     tgt_file = hparams.tgt_file
     src_vocab_file = hparams.src_vocab_file
@@ -125,6 +143,7 @@ def create_train_model(model_creator, hparams):
 
         src_dataset = tf.data.TextLineDataset(src_file)
         tgt_dataset = tf.data.TextLineDataset(tgt_file)
+        skip_count_placeholder = tf.placeholder(shape=(), dtype=tf.int64)
 
         iterator = iterator_utils.get_iterator(
             src_dataset,
@@ -135,18 +154,30 @@ def create_train_model(model_creator, hparams):
             hparams.sos,
             hparams.eos,
             hparams.random_seed,
-            hparams.num_buckets)
+            hparams.num_buckets,
+            skip_count=skip_count_placeholder)
 
         with tf.device("/cpu:0"):
             model = model_creator(
                 hparams,
                 iterator=iterator,
-                mode="train"
+                mode="train",
                 source_vocab_table=src_vocab_table,
                 target_vocab_table=tgt_vocab_table)
 
     return TrainModel(
         graph=graph,
         model=model,
-        iterator=iterator)
+        iterator=iterator,
+        skip_count_placeholder=skip_count_placeholder)
+
+def create_or_load_model(model, model_dir, session, name):
+    start_time = time.time()
+    session.run(tf.global_variables_initializer())
+    session.run(tf.tables_initializer())
+    utils.print_out("  created %s model with fresh parameters, time %.2fs" %
+                    (name, time.time() - start_time))
+
+    global_step = train_model.global_step.eval(session=train_sess)
+    return model, global_step
 ### EOS

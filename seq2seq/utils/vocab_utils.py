@@ -6,7 +6,7 @@ from tensorflow.python.ops import lookup_ops
 
 UNK = "<unk>"
 SOS = "<s>"
-EOS = "</s">
+EOS = "</s>"
 UNK_ID = 0
 
 def load_vocab(vocab_file):

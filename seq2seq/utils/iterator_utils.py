@@ -14,10 +14,11 @@ def get_infer_iterator(src_dataset,
                        src_vocab_table,
                        batch_size,
                        eos,
-                       src_max_len=None):
+                       src_max_len=None,
+                       delimiter="\t"):
 
     src_eos_id = tf.cast(src_vocab_table.lookup(tf.constant(eos)), tf.int32)
-    src_dataset = src_dataset.map(lambda src: tf.string_split([src], delimiter="\t").values)
+    src_dataset = src_dataset.map(lambda src: tf.string_split([src], delimiter=delimiter).values)
 
     if src_max_len:
         src_dataset = src_dataset.map(lambda src: src[:src_max_len])
@@ -63,27 +64,31 @@ def get_iterator(src_dataset,
                  random_seed,
                  num_buckets,
                  src_max_len=None,
-                 tgt_max_len=None):
+                 tgt_max_len=None,
+                 skip_count=None,
+                 reshuffle_each_iteration=True,
+                 delimiter="\t"):
 
     output_buffer_size = batch_size * 1000
     num_parallel_calls = 4
     num_shards = 1
     shard_index = 0
-    reshuffle_each_iteration = True
 
     src_eos_id = tf.cast(src_vocab_table.lookup(tf.constant(eos)), tf.int32)
     tgt_sos_id = tf.cast(tgt_vocab_table.lookup(tf.constant(sos)), tf.int32)
     tgt_eos_id = tf.cast(tgt_vocab_table.lookup(tf.constant(eos)), tf.int32)
-                 
+
     src_tgt_dataset = tf.data.Dataset.zip((src_dataset, tgt_dataset))
-    src_tgt_dataset = src_tgt_dataset(num_shards, shard_index)
+    src_tgt_dataset = src_tgt_dataset.shard(num_shards, shard_index)
+    if skip_count is not None:
+        src_tgt_dataset = src_tgt_dataset.skip(skip_count)
 
     src_tgt_dataset = src_tgt_dataset.shuffle(
         output_buffer_size, random_seed, reshuffle_each_iteration)
 
     src_tgt_dataset = src_tgt_dataset.map(
         lambda src, tgt: (
-            tf.string_split([src], delimiter="\t").values, tf.string_split([tgt], delimiter="\t").values),
+            tf.string_split([src], delimiter=delimiter).values, tf.string_split([tgt], delimiter=delimiter).values),
         num_parallel_calls=num_parallel_calls).prefetch(output_buffer_size)
 
     # Filter zero length input sequences.
@@ -140,11 +145,35 @@ def get_iterator(src_dataset,
                 0,           # src_len -- unused
                 0))          # tgt_len -- unused
 
-    batched_dataset = batching_func(src_tgt_dataset)
+    if num_buckets > 1:
+        def key_func(unused_1, unused_2, unused_3, src_len, tgt_len):
+            # Calculate bucket_width by maximum source sequence length.
+            # Pairs with length [0, bucket_width) go to bucket 0, length
+            # [bucket_width, 2 * bucket_width) go to bucket 1, etc.  Pairs with length
+            # over ((num_bucket-1) * bucket_width) words all go into the last bucket.
+            if src_max_len:
+                bucket_width = (src_max_len + num_buckets - 1) // num_buckets
+            else:
+                bucket_width = 10
+
+            # Bucket sentence pairs by the length of their source sentence and target
+            # sentence.
+            bucket_id = tf.maximum(src_len // bucket_width, tgt_len // bucket_width)
+            return tf.to_int64(tf.minimum(num_buckets, bucket_id))
+
+        def reduce_func(unused_key, windowed_data):
+            return batching_func(windowed_data)
+
+        batched_dataset = src_tgt_dataset.apply(
+            tf.contrib.data.group_by_window(
+                key_func=key_func, reduce_func=reduce_func, window_size=batch_size))
+                               
+    else:
+        batched_dataset = batching_func(src_tgt_dataset)
     batched_iter = batched_dataset.make_initializable_iterator()
     (src_ids, tgt_input_ids, tgt_output_ids, src_seq_len,
      tgt_seq_len) = (batched_iter.get_next())
-    return BachedInput(
+    return BatchedInput(
         initializer=batched_iter.initializer,
         source=src_ids,
         target_input=tgt_input_ids,
