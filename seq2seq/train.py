@@ -4,17 +4,21 @@ import sys
 import os
 import codecs
 import time
+import math
 
 import numpy as np
 import tensorflow as tf
 
 import model
-from .utils import misc_utils as utils
+import model_helper
+from utils import misc_utils as utils
 
 def train(hparams):
-    """Train a translation model."""
+    """Train a seq2seq model."""
+    log_device_placement = hparams.log_device_placement
     out_dir = hparams.out_dir
     num_train_steps = hparams.num_train_steps
+    steps_per_stats = hparams.steps_per_stats
 
     model_creator = model.Model
 
@@ -57,6 +61,7 @@ def train(hparams):
         except tf.errors.OutOfRangeError:
             # Finished going through the training dataset.  Go to next epoch.
             hparams.epoch_step = 0
+            utils.print_out("# Finished an epoch, step %d." % global_step)
 
             train_sess.run(
                 train_model.iterator.initializer,
@@ -67,7 +72,18 @@ def train(hparams):
         global_step, info["learning_rate"], step_summary = update_stats(
             stats, start_time, step_result)
         summary_writer.add_summary(step_summary, global_step)
-        break
+
+        # Once in a while, we print statistics.
+        if global_step - last_stats_step >= steps_per_stats:
+            last_stats_step = global_step
+            is_overflow = process_stats(stats, info, global_step, steps_per_stats, log_f)
+            print_step_info("  ", global_step, info, log_f)
+
+            if is_overflow:
+                break
+
+            # Reset statistics
+            stats = init_stats()
 
     # Done training
     loaded_train_model.saver.save(
@@ -76,6 +92,8 @@ def train(hparams):
         global_step=global_step)
 
     summary_writer.close()
+
+    return global_step
 
 def before_train(loaded_train_model, train_model, train_sess, global_step, hparams, log_f):
     """Misc tasks to do before training."""
@@ -113,4 +131,30 @@ def update_stats(stats, start_time, step_result):
     stats["grad_norm"] += grad_norm
 
     return global_step, learning_rate, step_summary
+
+def print_step_info(prefix, global_step, info, log_f):
+    """Print all info at the current global step."""
+    utils.print_out(
+        "%sstep %d lr %g step-time %.2fs wps %2.fK ppl %.2f gN %.2f, %s" %
+        (prefix, global_step, info["learning_rate"], info["avg_step_time"],
+         info["speed"], info["train_ppl"], info["avg_grad_norm"],
+         time.ctime()),
+        log_f)
+
+def process_stats(stats, info, global_step, steps_per_stats, log_f):
+    """Update info and check for overflow."""
+    # Update info
+    info["avg_step_time"] = stats["step_time"] / steps_per_stats
+    info["avg_grad_norm"] = stats["grad_norm"] / steps_per_stats
+    info["train_ppl"] = utils.safe_exp(stats["loss"] / stats["predict_count"])
+    info["speed"] = stats["total_count"] / (1000 * stats["step_time"])
+
+    # Check for overflow
+    is_overflow = False
+    train_ppl = info["train_ppl"]
+    if math.isnan(train_ppl) or math.isinf(train_ppl) or train_ppl > 1e20:
+        utils.print_out("  step %d overflow, stop early" % global_step, log_f)
+        is_overflow = True
+
+    return is_overflow
 ### EOS

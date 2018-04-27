@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import division, print_function, unicode_literals, absolute_import
+import os
 import codecs
+
 import tensorflow as tf
 from tensorflow.python.ops import lookup_ops
 
@@ -38,7 +40,7 @@ def check_vocab(vocab_file, out_dir, check_special_token=True, sos=None,
                 vocab_size += 3
                 new_vocab_file = os.path.join(out_dir, os.path.basename(vocab_file))
                 with codecs.getwriter("utf-8")(
-                        tf.gfile,GFile(new_vocab_file, "wb")) as f:
+                        tf.gfile.GFile(new_vocab_file, "wb")) as f:
                     for word in vocab:
                         f.write("%s\n" % word)
                 vocab_file = new_vocab_file

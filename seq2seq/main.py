@@ -3,10 +3,16 @@ from __future__ import division, print_function, unicode_literals, absolute_impo
 import sys
 import os
 import codecs
+import random
 import argparse
+
 import numpy as np
 import tensorflow as tf
+
 import train
+import inference
+from utils import misc_utils as utils
+from utils import vocab_utils
 
 FLAGS = None
 
@@ -115,7 +121,7 @@ def add_arguments(parse):
     parser.add_argument("--steps_per_stats", type=int, default=100,
                         help=("How many training steps to do per stats logging."
                               "Save checkpoint every 10x steps_per_stats"))
-    parser.add_arguemtn("--max_train", type=int, default=0,
+    parser.add_argument("--max_train", type=int, default=0,
                         help="Limit on the size of training data (0: no limit).")
     parser.add_argument("--num_buckets", type=int, default=5,
                         help="Put data into similar-length buckets.")
@@ -143,8 +149,6 @@ def create_hparams(flags):
         out_dir=flags.out_dir,
         num_buckets=flags.num_buckets,
         max_train=flags.max_train,
-        src_max_len=flags.src_max_len,
-        tgt_max_len=flags.tgt_max_len,
 
         # Vocab
         sos=flags.sos,
@@ -180,8 +184,6 @@ def create_hparams(flags):
         max_gradient_norm=flags.max_gradient_norm,
 
         # Inference
-        src_max_len_infer=flags.src_max_len_infer,
-        tgt_max_len_infer=flags.tgt_max_len_infer,
         infer_batch_size=flags.infer_batch_size,
         beam_width=flags.beam_width,
         length_penalty_weight=flags.length_penalty_weight,
@@ -201,22 +203,92 @@ def create_hparams(flags):
         num_inter_threads=flags.num_inter_threads,
     )
 
-def run_main(flags, default_hparams, train_fn):
+def extend_hparams(hparams):
+    """Extend training hparams."""
+    assert hparams.num_encoder_layers and hparams.num_decoder_layers
+
+    # Flags
+    utils.print_out("# hparams:")
+    utils.print_out("  src_file=%s" % hparams.src_file)
+    utils.print_out("  tgt_file=%s" % hparams.tgt_file)
+    utils.print_out("  out_dir=%s" % hparams.out_dir)
+
+    # Source vocab
+    src_vocab_size, src_vocab_file = vocab_utils.check_vocab(
+        hparams.src_vocab_file,
+        hparams.out_dir,
+        check_special_token=hparams.check_special_token,
+        sos=hparams.sos,
+        eos=hparams.eos,
+        unk=vocab_utils.UNK)
+
+    # Target vocab
+    if hparams.share_vocab:
+        utils.print_out("  using source vocab for target")
+        tgt_vocab_file = src_vocab_file
+        tgt_vocab_size = src_vocab_size
+    else:
+        tgt_vocab_size, tgt_vocab_file = vocab_utils.check_vocab(
+            hparams.tgt_vocab_file,
+            hparams.out_dir,
+            check_special_token=hparams.check_special_token,
+            sos=hparams.sos,
+            eos=hparams.eos,
+            unk=vocab_utils.UNK)
+    hparams.src_vocab_file = src_vocab_file
+    hparams.tgt_vocab_file = tgt_vocab_file
+    hparams.add_hparam("src_vocab_size", src_vocab_size)
+    hparams.add_hparam("tgt_vocab_size", tgt_vocab_size)
+
+    # Check out_dir
+    if not tf.gfile.Exists(hparams.out_dir):
+        utils.print_out("# Creating output directory %s ..." % hparams.out_dir)
+        tf.gfile.MakeDirs(hparams.out_dir)
+
+    return hparams
+
+def create_or_load_hparams(out_dir, default_hparams):
+    hparams = default_hparams
+    hparams = extend_hparams(hparams)
+    return hparams
+
+def run_main(flags, default_hparams, train_fn, inference_fn):
+    """Run main."""
+    # Random
+    random_seed = flags.random_seed
+    if random_seed is not None and random_seed > 0:
+        utils.print_out("# Set random seed to %d" % random_seed)
+        random.seed(random_seed)
+        np.random.seed(random_seed)
+
     ## Train / Decode
     out_dir = flags.out_dir
     if not tf.gfile.Exists(out_dir): tf.gfile.MakeDirs(out_dir)
-    # Train
-    # train_fn(default_hparams)
+
+    hparams = create_or_load_hparams(out_dir, default_hparams)
+
+    if flags.inference_input_file:
+        # Inference
+        ckpt = flags.ckpt
+        if not ckpt:
+            ckpt = tf.train.latest_checkpoint(out_dir)
+        inference_fn(ckpt,
+                     flags.inference_input_file,
+                     flags.inference_output_file,
+                     hparams)
+    else:
+        # Train
+        train_fn(default_hparams)
 
 def main(unused_argv):
     default_hparams = create_hparams(FLAGS)
     train_fn = train.train
-    # inference_fn = inference.inference
-    run_main(FLAGS, default_hparams, train_fn)
+    inference_fn = inference.inference
+    run_main(FLAGS, default_hparams, train_fn, inference_fn)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     add_arguments(parser)
-    FLAGS, unparsed = parser.parser_known_args()
+    FLAGS, unparsed = parser.parse_known_args()
     tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)
 ### EOF

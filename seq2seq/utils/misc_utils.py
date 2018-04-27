@@ -5,9 +5,18 @@ import os
 import codecs
 import time
 import collections
+import math
 
 import numpy as np
 import tensorflow as tf
+
+def safe_exp(value):
+    """Exponentiation with catching of overflow error."""
+    try:
+        ans = math.exp(value)
+    except OverflowError:
+        ans = float("inf")
+    return ans
 
 def print_time(s, start_time):
     """Take a start time, print elapsed duration, and return a new time."""

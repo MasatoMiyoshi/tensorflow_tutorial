@@ -5,11 +5,20 @@ import os
 import codecs
 import time
 
+import numpy as np
 import tensorflow as tf
 
 import model
 import model_helper
-from .utils import misc_utils as utils
+from utils import misc_utils as utils
+
+def load_data(inference_input_file, hparams=None):
+    """Load inference data."""
+    with codecs.getreader("utf-8")(
+            tf.gfile.GFile(inference_input_file, mode="rb")) as f:
+        inference_data = f.read().splitlines()
+
+    return inference_data
 
 def inference(ckpt,
               inference_input_file,
@@ -47,13 +56,21 @@ def single_worker_inference(infer_model,
                  })
         # Decode
         utils.print_out("# Start decoding")
+        _decode_and_evaluate("infer",
+                             loaded_infer_model,
+                             sess,
+                             output_infer,
+                             ref_file=None,
+                             subword_option=None,
+                             beam_width=hparams.beam_width,
+                             tgt_eos=hparams.eos,
+                             num_translations_per_input=hparams.num_translations_per_input)
 
 def _decode_and_evaluate(name,
                          model,
                          sess,
                          trans_file,
                          ref_file,
-                         metrics,
                          subword_option,
                          beam_width,
                          tgt_eos,
@@ -72,7 +89,7 @@ def _decode_and_evaluate(name,
             num_translations_per_input = max(min(num_translations_per_input, beam_width), 1)
             while True:
                 try:
-                    outputs = model.decode(sess)
+                    outputs, _ = model.decode(sess)
                     if beam_width == 0:
                         outputs = np.expand_dims(outputs, 0)
 
@@ -81,7 +98,7 @@ def _decode_and_evaluate(name,
 
                     for sent_id in range(batch_size):
                         for beam_id in range(num_translations_per_input):
-                            translation = get_translation(
+                            translation = _get_translation(
                                 outputs[beam_id],
                                 sent_id,
                                 tgt_eos=tgt_eos,

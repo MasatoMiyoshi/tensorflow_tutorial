@@ -8,6 +8,7 @@ import collections
 
 import numpy as np
 import tensorflow as tf
+from tensorflow.python.ops import lookup_ops
 
 from utils import iterator_utils
 from utils import vocab_utils
@@ -42,7 +43,7 @@ def create_emb_for_encoder_and_decoder(share_vocab,
                 raise ValueError("Share embedding but different src/tgt vocab size"
                                  " %d vs. %d" % (src_vocab_size, tgt_vocab_size))
             assert src_embed_size == tgt_embed_size
-            print("# Use the same embedding for source and target")
+            utils.print_out("# Use the same embedding for source and target")
             vocab_file = src_vocab_file or tgt_vocab_file
 
             embedding_encoder = _create_or_load_embed("embedding_share", vocab_file, src_vocab_size, src_embed_size, dtype)
@@ -98,12 +99,12 @@ def _single_cell(unit_type, num_units, forget_bias, dropout, mode):
 
     # Cell Type
     if unit_type == "lstm":
-        print("  LSTM, forget_bias=%g" % forget_bias)
+        utils.print_out("  LSTM, forget_bias=%g" % forget_bias, new_line=False)
         single_cell = tf.contrib.rnn.BasicLSTMCell(
             num_units,
             forget_bias=forget_bias)
     elif unit_type == "gru":
-        print("  GRU")
+        utils.print_out("  GRU", new_line=False)
         single_cell = tf.contrib.rnn.GRUCell(num_units)
     else:
         raise ValueError("Unknown unit type %s!" % unit_type)
@@ -111,7 +112,7 @@ def _single_cell(unit_type, num_units, forget_bias, dropout, mode):
     # Dropout (= 1 - keep_prob)
     if dropout > 0.0:
         single_cell = tf.contrib.rnn.DropoutWrapper(cell=single_cell, input_keep_prob=(1.0 - dropout))
-        print("  %s, dropout=%g " % (type(single_cell).__name__, dropout))
+        utils.print_out("  %s, dropout=%g " % (type(single_cell).__name__, dropout), new_line=False)
 
     return single_cell
 
@@ -150,18 +151,20 @@ def create_train_model(model_creator, hparams):
             tgt_dataset,
             src_vocab_table,
             tgt_vocab_table,
-            hparams.batch_size,
-            hparams.sos,
-            hparams.eos,
-            hparams.random_seed,
-            hparams.num_buckets,
+            batch_size=hparams.batch_size,
+            sos=hparams.sos,
+            eos=hparams.eos,
+            random_seed=hparams.random_seed,
+            num_buckets=hparams.num_buckets,
+            src_max_len=hparams.src_max_len,
+            tgt_max_len=hparams.tgt_max_len,
             skip_count=skip_count_placeholder)
 
         with tf.device("/cpu:0"):
             model = model_creator(
                 hparams,
                 iterator=iterator,
-                mode="train",
+                mode=tf.estimator.ModeKeys.TRAIN,
                 source_vocab_table=src_vocab_table,
                 target_vocab_table=tgt_vocab_table)
 
@@ -171,6 +174,58 @@ def create_train_model(model_creator, hparams):
         iterator=iterator,
         skip_count_placeholder=skip_count_placeholder)
 
+class InferModel(
+        collections.namedtuple("InferModel",
+                               ("graph", "model", "src_placeholder",
+                                "batch_size_placeholder", "iterator"))):
+    pass
+
+def create_infer_model(model_creator, hparams):
+    """Create inference model."""
+    graph = tf.Graph()
+    src_vocab_file = hparams.src_vocab_file
+    tgt_vocab_file = hparams.tgt_vocab_file
+
+    with graph.as_default(), tf.container("infer"):
+        src_vocab_table, tgt_vocab_table = vocab_utils.create_vocab_tables(
+            src_vocab_file, tgt_vocab_file, hparams.share_vocab)
+        reverse_tgt_vocab_table = lookup_ops.index_to_string_table_from_file(
+            tgt_vocab_file, default_value=vocab_utils.UNK)
+
+        src_placeholder = tf.placeholder(shape=[None], dtype=tf.string)
+        batch_size_placeholder = tf.placeholder(shape=[], dtype=tf.int64)
+
+        src_dataset = tf.data.Dataset.from_tensor_slices(src_placeholder)
+
+        iterator = iterator_utils.get_infer_iterator(
+            src_dataset,
+            src_vocab_table,
+            batch_size=batch_size_placeholder,
+            eos=hparams.eos,
+            src_max_len=hparams.src_max_len_infer)
+
+        model = model_creator(
+            hparams,
+            iterator=iterator,
+            mode=tf.estimator.ModeKeys.PREDICT,
+            source_vocab_table=src_vocab_table,
+            target_vocab_table=tgt_vocab_table,
+            reverse_target_vocab_table=reverse_tgt_vocab_table)
+
+    return InferModel(
+        graph=graph,
+        model=model,
+        src_placeholder=src_placeholder,
+        batch_size_placeholder=batch_size_placeholder,
+        iterator=iterator)
+
+def load_model(model, ckpt, session, name):
+    start_time = time.time()
+    model.saver.restore(session, ckpt)
+    session.run(tf.tables_initializer())
+    utils.print_out("  loaded %s model parameters from %s, time %.2fs" % (name, ckpt, time.time() - start_time))
+    return model
+
 def create_or_load_model(model, model_dir, session, name):
     start_time = time.time()
     session.run(tf.global_variables_initializer())
@@ -178,6 +233,6 @@ def create_or_load_model(model, model_dir, session, name):
     utils.print_out("  created %s model with fresh parameters, time %.2fs" %
                     (name, time.time() - start_time))
 
-    global_step = train_model.global_step.eval(session=train_sess)
+    global_step = model.global_step.eval(session=session)
     return model, global_step
 ### EOS

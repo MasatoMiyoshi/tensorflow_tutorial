@@ -60,9 +60,9 @@ class BaseModel(object):
         if self.mode == tf.estimator.ModeKeys.TRAIN:
             self.train_loss = res[1]
             self.word_count = tf.reduce_sum(self.iterator.source_sequence_length) + tf.reduce_sum(self.iterator.target_sequence_length)
-        elif self.mode == tf.estimator.ModeKyes.EVAL:
+        elif self.mode == tf.estimator.ModeKeys.EVAL:
             self.eval_loss = res[1]
-        elif self.mode == tf.estimator.ModeKyes.PREDICT:
+        elif self.mode == tf.estimator.ModeKeys.PREDICT:
             self.infer_logits, _, self.final_context_state, self.sample_id = res
             self.sample_words = reverse_target_vocab_table.lookup(tf.to_int64(self.sample_id))
 
@@ -239,7 +239,8 @@ class BaseModel(object):
                     my_decoder,
                     maximum_iterations=maximum_iterations,
                     output_time_major=self.time_major,
-                    swap_memory=True)
+                    swap_memory=True,
+                    scope=decoder_scope)
 
                 if beam_width > 0:
                     logits = tf.np_op()
