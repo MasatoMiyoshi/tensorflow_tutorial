@@ -67,4 +67,20 @@ def format_text(words):
         not isinstance(words, collections.Iterable)):
         words = [words]
     return b"".join(words)
+
+def print_hparams(hparams, skip_patterns=None, header=None):
+    """Print hparams, can skip keys based on pattern."""
+    if header: print_out("%s" % header)
+    values = hparams.values()
+    for key in sorted(values.keys()):
+        if not skip_patterns or all(
+                [skip_pattern not in key for skip_pattern in skip_patterns]):
+            print_out("  %s=%s" % (key, str(values[key])))
+
+def save_hparams(out_dir, hparams):
+    """Save hparams."""
+    hparams_file = os.path.join(out_dir, "hparams")
+    print_out("  saving hparams to %s" % hparams_file)
+    with codecs.getwriter("utf-8")(tf.gfile.GFile(hparams_file, "wb")) as f:
+        f.write(hparams.to_json())
 ### EOF

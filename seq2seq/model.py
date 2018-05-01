@@ -375,13 +375,13 @@ class Model(BaseModel):
         with tf.variable_scope("encoder") as scope:
             dtype=scope.dtype
             # Look up embedding, emp_inp: [max_time, batch_size, num_units]
-            encoder_emb_imp = tf.nn.embedding_lookup(self.embedding_encoder, source)
+            encoder_emp_inp = tf.nn.embedding_lookup(self.embedding_encoder, source)
 
             print("  num_layers = %d" % (num_layers))
             cell = self._build_encoder_cell(hparams, num_layers)
             encoder_outputs, encoder_state = tf.nn.dynamic_rnn(
                 cell,
-                encoder_emb_imp,
+                encoder_emp_inp,
                 dtype=dtype,
                 sequence_length=iterator.source_sequence_length,
                 time_major=self.time_major,

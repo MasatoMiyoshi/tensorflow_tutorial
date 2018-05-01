@@ -44,8 +44,10 @@ class TestIteratorUtils(tf.test.TestCase):
             sess.run(table_initializer)
             sess.run(iterator.initializer)
             (source_v, src_seq_len_v) = sess.run((source, src_seq_len))
+            print(source_v)
+            print(src_seq_len_v)
+
             (source_v, src_seq_len_v) = sess.run((source, src_seq_len))
-            
             print(source_v)
             print(src_seq_len_v)
 
