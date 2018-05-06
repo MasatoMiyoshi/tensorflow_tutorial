@@ -1,0 +1,1000 @@
+RECORD_START	-1	最高気温	は	17度	が	予想	さ	れ	ます	??
+RECORD_START	-1	猛暑	に	備え	て	ます	か	?
+RECORD_START	-1	クーラー	は	快適	です	ね
+RECORD_START	-1	会社	は	冷房	が	効き	ます	よ	ねえ
+RECORD_START	-1	動き	が	悪い	です
+RECORD_START	-1	パソコン	は	使い勝手	が	悪い	です
+RECORD_START	-1	パソコン	は	調子	が	いい	です	ね
+RECORD_START	-1	パソコン	は	気分	が	悪い	です	か
+RECORD_START	-1	パソコン	は	元気	です	ね
+RECORD_START	-1	パソコン	は	大事	です	ね
+RECORD_START	-1	お	はっ
+RECORD_START	-1	旅行	は	好き	です	か	?
+RECORD_START	-1	旅行	は	友達	と	が	いい	です	か
+RECORD_START	-1	一緒	が	いい	です	ね
+RECORD_START	-1	一緒	は	いい	です	ね
+RECORD_START	-1	一緒	は	居心地	が	よい	です	ね
+RECORD_START	-1	居心地	が	最高	に	良い	です	ね
+RECORD_START	-1	居心地	が	最高	に	イ	い	です	ね
+RECORD_START	-1	旅行	は	寒い	です
+RECORD_START	-1	旅行	で	疲れる	かも	しれ	ない
+RECORD_START	-1	こんにちは	っ
+RECORD_START	-1	好き	な	食べ物	は	なん	でしょ	う
+RECORD_START	-1	揚げ物	は	美味しい	です	ね
+RECORD_START	-1	揚げ物	は	得意	です	ね
+RECORD_START	-1	揚げ物	は	得意	です	よ	ねえ
+RECORD_START	-1	人	が	多い	です	よ	ねえ
+RECORD_START	-1	ビアガーデン	は	最高	な	ん	です	よ	ねー
+RECORD_START	-1	緑	は	力強い	です	ね
+RECORD_START	-1	緑	が	豊か	です	ね
+RECORD_START	-1	緑	は	心地よい	です	ね
+RECORD_START	-1	川	に	行き	たい	ん	です	か	?
+RECORD_START	-1	おやすみなさい
+RECORD_START	-1	いい	です	ね
+RECORD_START	-1	それ	な
+RECORD_START	-1	おなか	が	痛く	なら	ない	かも
+RECORD_START	-1	おなか	を	痛め	ます
+RECORD_START	-1	了解	です	。	一人暮らし	な	ん	です	か	?
+RECORD_START	-1	ところで	、	山梨県北杜市	に	ある	オオムラサキ	センター	に	、	10万	匹	に	1	匹	の	割合	で	見	られる	珍し	い色	で	、	水色	の	ニホンアマガエル	が	展示	さ	れ	て	いる	そう	です	。
+RECORD_START	-1	ニホンアマガエル	が	欲しい	です	ね
+RECORD_START	-1	カエル	は	アマガエル	が	可愛い	です	ね
+RECORD_START	-1	いい	なー
+RECORD_START	-1	海	は	大丈夫	です
+RECORD_START	-1	行き	ましょ	う
+RECORD_START	-1	なに	が
+RECORD_START	-1	朝	から	海	に	行き	ます	よ	ねー
+RECORD_START	-1	海	は	一人	で	行き	ます	よ	ねー
+RECORD_START	-1	海	に	いき	ます	よ	ねえ
+RECORD_START	-1	朝	から	海	に	行き	ます
+RECORD_START	-1	てらり
+RECORD_START	-1	そんな	こと	ない	です	よ
+RECORD_START	-1	今日	は	家事	が	片付き	まし	た	か	?
+RECORD_START	-1	家事	は	楽	です	ね
+RECORD_START	-1	家事	は	辛い	です	か
+RECORD_START	-1	え	ぇ
+RECORD_START	-1	家事	から	離れ	ます	よ	ねえ
+RECORD_START	-1	うん
+RECORD_START	-1	学生時代	は	懐かしい	です	ね
+RECORD_START	-1	うん
+RECORD_START	-1	学生時代	を	懐かしん	で	ます	か	?
+RECORD_START	-1	り	ょ	ー	かい
+RECORD_START	-1	こん	ちゃ
+RECORD_START	-1	今	健康	で	いらっしゃい	ます	か	?
+RECORD_START	-1	何	県	出身	な	ん	です	か	?
+RECORD_START	-1	人口	が	多い	です
+RECORD_START	-1	人口	が	圧倒的	に	多い	です
+RECORD_START	-1	人口	は	多い	です
+RECORD_START	-1	待ち	は	良い	です	ね
+RECORD_START	-1	いい	の	だ
+RECORD_START	-1	すごい	待ち	の	姿勢	だ
+RECORD_START	-1	出待ち	の	列	凄い
+RECORD_START	-1	同じく
+RECORD_START	-1	オムライス	を	食べ	に	行き	ます	よ	ねー
+RECORD_START	-1	駅前	まで	お	買い物	に	行き	ます
+RECORD_START	-1	二人	で	行く	予定	です
+RECORD_START	-1	都合	が	良い	です	ね
+RECORD_START	-1	都合	が	政府	に	悪い	です	よ	ねえ
+RECORD_START	-1	都合	で	無理	な	ん	です	よ	ねー
+RECORD_START	-1	ボーリング	は	無理	です	よ	ねー
+RECORD_START	-1	カラオケ	は	行く	の	が	いい	です	ね
+RECORD_START	-1	一人	が	いい	です	ね
+RECORD_START	-1	熱中症	に	気	を	つけ	て	たい	です	か	?
+RECORD_START	-1	熱中症	に	気	を	つけ	ない	ん	です	か	?
+RECORD_START	-1	クーラー	は	心地よい	です	ね
+RECORD_START	-1	クーラー	は	快適	よ	ねー
+RECORD_START	-1	クーラー	は	暑い	です	よ	ねー
+RECORD_START	-1	クーラー	は	暑い	です
+RECORD_START	-1	ヒーター	は	暖かい	です
+RECORD_START	-1	ヒーター	は	部屋	を	暖める	かも	しれ	ない
+RECORD_START	-1	電気代	は	安い	です	ね
+RECORD_START	-1	うん
+RECORD_START	-1	朝	から	海	に	行き	ます	か	??
+RECORD_START	-1	いつ	で	も
+RECORD_START	-1	気持ち	が	いい	です
+RECORD_START	-1	海	は	気持ち	が	え	い	です
+RECORD_START	-1	気持ち	が	落ち着く	の	です
+RECORD_START	-1	よかっ	た
+RECORD_START	-1	色々	と
+RECORD_START	-1	透明度	が	良い	らしい
+RECORD_START	-1	わあ	!	いい	です	ね	!
+RECORD_START	-1	潮干狩り	は	楽しい	です	ね
+RECORD_START	-1	夕食	は	食べ	まし	た	か	?
+RECORD_START	-1	野菜ジュース	は	果物	が	入っ	てる	の	です	か	?
+RECORD_START	-1	野菜ジュース	に	入り	ます	か	?
+RECORD_START	-1	そうですね
+RECORD_START	-1	野菜ジュース	は	果汁	が	入り	ます	よ	ねー
+RECORD_START	-1	砂糖	を	加え	ます	よ	ねー
+RECORD_START	-1	砂糖	は	たっぷり	です	ね
+RECORD_START	-1	ダイエット	は	体重	が	減る	ん	です	よ	ねぇ
+RECORD_START	-1	まじ	か
+RECORD_START	-1	ダイエット	が	おすすめ	です	けど	ねぇ
+RECORD_START	-1	タバコ	は	欲しい	です	ね
+RECORD_START	-1	タバコ	が	好き	です	ね
+RECORD_START	-1	お酒	は	ビール	が	好き	です	ね
+RECORD_START	-1	風呂	上がり	に	飲ん	でる	ん	です
+RECORD_START	-1	生ビール	は	外	で	飲ん	だり	と	か	です
+RECORD_START	-1	一人	で	飲ん	だり	と	か	です
+RECORD_START	-1	昼	から	ワイン	を	飲み	ます
+RECORD_START	-1	白ワイン	は	飲み	やすい	の	が	好き	です	ね
+RECORD_START	-1	白ワイン	は	大好き	です	ね
+RECORD_START	-1	魚	は	可愛い	です	ね
+RECORD_START	-1	はい
+RECORD_START	-1	天気	は	爽やか	な	ん	です	よ	ねー
+RECORD_START	-1	気分	が	清々しい	です	ね
+RECORD_START	-1	気分	は	爽やか	です	ね
+RECORD_START	-1	気分	は	清々しい	です	ね
+RECORD_START	-1	夏バテ	で	疲れ	ます
+RECORD_START	-1	栄養	は	体	に	与え	ます
+RECORD_START	-1	栄養	は	おかしい	です	ね
+RECORD_START	-1	睡眠	は	いい	です	ね
+RECORD_START	-1	睡眠	は	7時間	くらい	が	いい	です	ね
+RECORD_START	-1	退屈	に	なり	がち	か
+RECORD_START	-1	おう
+RECORD_START	-1	退屈	で	疲れる	の	です
+RECORD_START	-1	退屈	に	なり	がち	です
+RECORD_START	-1	退屈	で	眠い	です
+RECORD_START	-1	興味	が	ある	わけ	で	は	ない	です	ね
+RECORD_START	-1	なんとなく	笑
+RECORD_START	-1	スポーツ	は	楽しい	です	ね
+RECORD_START	-1	です	よ	ね
+RECORD_START	-1	生	観戦	が	いい	です	ね
+RECORD_START	-1	宇宙人	は	いる	と	思い	ます	か	?
+RECORD_START	-1	最近	気になるニュース	など	は	あり	ます	か	?
+RECORD_START	-1	いい	です	ねぇ
+RECORD_START	-1	ほんと	です
+RECORD_START	-1	ブラック
+RECORD_START	-1	サッカー	が	うまく	なり	たい	そう	です	よ
+RECORD_START	-1	さぁ
+RECORD_START	-1	サッカー	が	でき	ない	そう	です
+RECORD_START	-1	えっ
+RECORD_START	-1	えっ
+RECORD_START	-1	海	は	楽しい	です	ね
+RECORD_START	-1	海	は	好き	です	ね
+RECORD_START	-1	気持ち	が	いい	です	ね
+RECORD_START	-1	です	よ	ね
+RECORD_START	-1	海	は	騒がしい	です	よ	ねえ
+RECORD_START	-1	海	は	静か	な	ん	です	よ	ねー
+RECORD_START	-1	海	は	サイコー	です	よ	ねえ
+RECORD_START	-1	さいこー
+RECORD_START	-1	海	は	サイコー	です	ね
+RECORD_START	-1	海	は	素晴らしい	です	ね
+RECORD_START	-1	熱中症	に	気をつけ	か	??
+RECORD_START	-1	はい
+RECORD_START	-1	許し	ましょ	う
+RECORD_START	-1	ところで	、	原爆の日	の	6日	夜	に	、	原爆ドーム前	を	流れる	元安川	で	灯籠	流し	が	あり	、	約	8000	個	の	明かり	に	参加者	は	手	を	合わせ	冥福	を	祈っ	た	そう	です	。
+RECORD_START	-1	winter	が	過ぎ	てる	よう	です
+RECORD_START	-1	嘘	は	綻び	が	出る	予定	です
+RECORD_START	-1	季節	は	早い	です
+RECORD_START	-1	はい
+RECORD_START	-1	イケメン	を	みる	の	です
+RECORD_START	-1	イケメン	が	でる	かも	しれ	ない
+RECORD_START	-1	こんにちは	あり	です
+RECORD_START	-1	退屈	が	忌々しい	です
+RECORD_START	-1	いい	です	ねぇ
+RECORD_START	-1	ゲーム	は	多い	です
+RECORD_START	-1	将棋	は	多い	です
+RECORD_START	-1	ルール	は	偽物	が	多い	です
+RECORD_START	-1	ルール	は	細かい	です
+RECORD_START	-1	ルール	は	多い	です
+RECORD_START	-1	ルール	を	見	ます
+RECORD_START	-1	ルール	が	分から	ない	ん	でしょ	う	か	ね
+RECORD_START	-1	台風	は	いかが	です	か
+RECORD_START	-1	つよい
+RECORD_START	-1	はい
+RECORD_START	-1	天気	は	サイコー	です	ね
+RECORD_START	-1	気分	が	いい	です	ね
+RECORD_START	-1	気温	は	これ	ぐらい	が	いい	とか
+RECORD_START	-1	いき	た	ー	い
+RECORD_START	-1	一緒に	手	を	つなぎ	ます
+RECORD_START	-1	一緒	は	恥ずかしい	です	ね
+RECORD_START	-1	うん
+RECORD_START	-1	明けましておめでとうございます
+RECORD_START	-1	朝	から	海	に	行き	ます
+RECORD_START	-1	いき	た	ー	い
+RECORD_START	-1	泳ぎ	に	行き	たい	の	です
+RECORD_START	-1	いい	でしょ
+RECORD_START	-1	気持ち	が	いい	です	ね
+RECORD_START	-1	です	ね
+RECORD_START	-1	気持ち	が	え	い	です	けど	ねぇ
+RECORD_START	-1	気持ち	が	いい	ます	よ	ねー
+RECORD_START	-1	波	が	怖い	です
+RECORD_START	-1	花火	は生	が	いい	です	ね
+RECORD_START	-1	花火	は	夏	が	いい	です	ね
+RECORD_START	-1	見る	の	が	いい	です	ね
+RECORD_START	-1	奥	が	深い	です	ね
+RECORD_START	-1	参加	は	自由	です	ね
+RECORD_START	-1	夏祭り	が	楽しみ	です	ね
+RECORD_START	-1	屋台	が	楽しみ	よ	ねえ
+RECORD_START	-1	屋台	は	良い	です	ね
+RECORD_START	-1	屋台	は	欲しい	です	ね
+RECORD_START	-1	屋台	は	好き	です	ね
+RECORD_START	-1	車	が	来る	まで	、	ワクワク	、	ドキドキ	。
+RECORD_START	-1	ジョーク	は	好き	です	ね
+RECORD_START	-1	ありがとう
+RECORD_START	-1	タイミング	が	大切	か
+RECORD_START	-1	チャレンジ	と	失敗	の	繰り返し	が	良い	の	です	ね
+RECORD_START	-1	繰り返し	は	面白い	です	ね
+RECORD_START	-1	繰り返し	は	大事	です	ね
+RECORD_START	-1	うむ
+RECORD_START	-1	麺	は	コシ	が	命	な	ん	です	が	ねぇ
+RECORD_START	-1	命	は	愛しい	です	ね
+RECORD_START	-1	ち	は	ー
+RECORD_START	-1	台風	で	電車	が	遅れ	て	ます	か	?
+RECORD_START	-1	台風	は	大丈夫	です	ね
+RECORD_START	-1	九州	は	大	荒れよ	ねー
+RECORD_START	-1	九州	は	大丈夫	です	ね
+RECORD_START	-1	障害	は	不便	な	ん	です	よ	ねえ
+RECORD_START	-1	障害	は	上手い	です	ね
+RECORD_START	-1	雨	は	心地よい	です	ね
+RECORD_START	-1	雨	は	心地よい	です	よ	ねー
+RECORD_START	-1	雨	は	得意	です	ね
+RECORD_START	-1	スイカ	で	有名	です	ね
+RECORD_START	-1	スイカ	で	有名	です	よ	ねえ
+RECORD_START	-1	あり	が	とー
+RECORD_START	-1	スイカ	は	食べる	の	が	おいしい	です	ね
+RECORD_START	-1	食べる	の	が	おいしい	です	ね
+RECORD_START	-1	めしてら
+RECORD_START	-1	ドラマ
+RECORD_START	-1	ありがとう
+RECORD_START	-1	ドラマ	が	楽しみ	か
+RECORD_START	-1	テレビ	で	韓流ドラマ	が	流れ	て	ます	か	?
+RECORD_START	-1	水分補給	に	飲み	ます	??
+RECORD_START	-1	ポカリ	は	水分	を	補給	する	の	でしょ	う	か	?
+RECORD_START	-1	ポカリ	は	欲しい	です	ね
+RECORD_START	-1	ポカリ	は	味	が	濃い	です	ね
+RECORD_START	-1	ポカリ	はいい	です	ね
+RECORD_START	-1	ブラック	が	よい	です	ね
+RECORD_START	-1	ブラック	は	いい	です	ね
+RECORD_START	-1	コーヒー	は	無	糖	が	いい	です	ね
+RECORD_START	-1	ブラック	が	好き	です	ね
+RECORD_START	-1	ブラック	は	かっこいい	です	ね
+RECORD_START	-1	熱中症	に	気	を	つけ	て	たい	です	か	?
+RECORD_START	-1	熱中症	に	気をつけ	か	??
+RECORD_START	-1	そう	か
+RECORD_START	-1	熱中症	はいい	です	ね
+RECORD_START	-1	なに	が
+RECORD_START	-1	熱中症	に	気	を	つけ	ない	な
+RECORD_START	-1	熱中症	に	気	を	つけよ	ねー
+RECORD_START	-1	熱中症	に	気	を	つけ	なけれ	ば	なっ	て	ない	なあ
+RECORD_START	-1	熱中症	に	気	を	つけ	たい	の	です
+RECORD_START	-1	熱中症	が	心配	さ	れる	の	です
+RECORD_START	-1	歳	は	重い	です
+RECORD_START	-1	乗り物	は	夜	を	迎える	の	です
+RECORD_START	-1	乗り物	は	楽しい	です	ね
+RECORD_START	-1	乗り物	は	好き	です	ね
+RECORD_START	-1	乗り物	は	大好き	です	ね
+RECORD_START	-1	スパイダーマン	が	おもしろい	です	ね
+RECORD_START	-1	スパイダーマン	は	おもろい	です	ね
+RECORD_START	-1	です	よ	ね
+RECORD_START	-1	映画	は	一人	が	いい	です	ね
+RECORD_START	-1	音響	が	いい	です	ね
+RECORD_START	-1	ち	わー
+RECORD_START	-1	ワロタ	が	好き	です	ね
+RECORD_START	-1	そうですね	、
+RECORD_START	-1	ダジャレ	は	好き	です	ね
+RECORD_START	-1	ダジャレ	は	好き	よ	ねえ
+RECORD_START	-1	やっぱり
+RECORD_START	-1	大相撲	は	面白い	です	よ	ねー
+RECORD_START	-1	ワロタ	が	好き	な	ん	です	よ	ねー
+RECORD_START	-1	いいね
+RECORD_START	-1	いい	湯	の	ブログワロタ	。
+RECORD_START	-1	こんにちは
+RECORD_START	-1	朝	から	海	に	行き	ます	よ	ねー
+RECORD_START	-1	海	は	一人	で	行き	ます	よ	ねー
+RECORD_START	-1	海	に	行っ	て	ない	なあ
+RECORD_START	-1	海	は	一人	で	行く	の	です
+RECORD_START	-1	やったー	ありがとう
+RECORD_START	-1	気持ち	が	いい	です	ね
+RECORD_START	-1	海	は	好き	です	ね
+RECORD_START	-1	海	は	大好き	です	ね
+RECORD_START	-1	海	は	素晴らしい	です	ね
+RECORD_START	-1	ところで	、	11日	、	第	96回	全国高校野球選手権大会	が	台風11号	の	影響	で	二	日	遅れ	て	甲子園球場	で	開幕	し	、	決勝	は	25日	の	予定	だ	そう	です	。
+RECORD_START	-1	東京国立	競技場	で	決勝	が	行わ	れる	らしい	です
+RECORD_START	-1	決勝	は	ムジェロサーキット	で	行い	ます
+RECORD_START	-1	ロシア	が	勝っ	て	ます	よ
+RECORD_START	-1	ロシア	は	国	が	広	とか
+RECORD_START	-1	治安	が	悪い	よう	です
+RECORD_START	-1	メキシコ	で	治安	が	悪	そう	です	よ
+RECORD_START	-1	ロシア	に	向かう	ん	です
+RECORD_START	-1	ロシア	に	向かう	の	です
+RECORD_START	-1	ロシア	は	強い	です
+RECORD_START	-1	何	か	健康	に	気	を	つけ	て	ます	か	?
+RECORD_START	-1	えっ
+RECORD_START	-1	何	か	ペット	を	飼っ	て	ます	か	?
+RECORD_START	-1	散歩	は	必要	あり	ませ	ん	ね	。
+RECORD_START	-1	散歩	が	必要	です	よ	ねー
+RECORD_START	-1	犬	は	散歩	が	好き	です	ね
+RECORD_START	-1	パグ	が	好き	です	ね
+RECORD_START	-1	パグ	はいい	です	ね
+RECORD_START	-1	チワワ	は	欲しい	です	ね
+RECORD_START	-1	チワワ	はいい	らしい	です	よ
+RECORD_START	-1	音楽	は	好き	です	か	?
+RECORD_START	-1	クラブ	は	楽しい	もの	です	か	?
+RECORD_START	-1	クラブ	は	好き	です	ね
+RECORD_START	-1	クラブ	は	多い	です	か
+RECORD_START	-1	大阪	で	有名	です	ね
+RECORD_START	-1	都会	は	華やか	です	ね
+RECORD_START	-1	都会	は	おしゃれ	です	ね
+RECORD_START	-1	ねー
+RECORD_START	-1	ねー
+RECORD_START	-1	音楽	は	ロック	が	好き	です	ね
+RECORD_START	-1	こん	ちゃー
+RECORD_START	-1	映画	を	観る	なら	映画館	?D	VD	?
+RECORD_START	-1	最新	の	映画	が	観	られ	ます	から	ね
+RECORD_START	-1	迫力	は	怖い	です	ね
+RECORD_START	-1	迫力	が	凄い	です	ね
+RECORD_START	-1	です	よ	ね
+RECORD_START	-1	迫力	は	わか	ん	ない	です
+RECORD_START	-1	そういう	こと	だ
+RECORD_START	-1	迫力	は	わか	ん	ない	です	ね
+RECORD_START	-1	迫力	が	で	て	ます	か	?
+RECORD_START	-1	夏休み	は	忙しい	です	か
+RECORD_START	-1	夏休み	は	暇	です	か
+RECORD_START	-1	夏休み	は	部活	が	忙しい	です	か
+RECORD_START	-1	夏休み	は	忙しい	です
+RECORD_START	-1	天気	は	爽やか	です	ね
+RECORD_START	-1	大変	です	ね
+RECORD_START	-1	傘	は	骨	が	曲がる	ん	です	よ	ねぇ
+RECORD_START	-1	風	は	優しい	です	ね
+RECORD_START	-1	風	は	爽やか	です	ね
+RECORD_START	-1	風	は	心地よい	です	ね
+RECORD_START	-1	ご	家族	と	は	一緒	に	暮らし	て	い	ます	か	?
+RECORD_START	-1	どんな	音楽	が	お	好き	です	か	?
+RECORD_START	-1	ピアノ曲	が	いい	です	ね
+RECORD_START	-1	ピアノ曲	は	素晴らしい	です	ね
+RECORD_START	-1	ピアノ	は	心地よい	です	ね
+RECORD_START	-1	ピアノ	は	大好き	です	ね
+RECORD_START	-1	サックス	が	いい	です	ね
+RECORD_START	-1	相性	が	いい	です	ね
+RECORD_START	-1	台風	は	必要	です
+RECORD_START	-1	朝	から	雨	が	降る	の	です
+RECORD_START	-1	健康	に	は	注意	さ	れ	て	ます	か	?
+RECORD_START	-1	野菜	を	とり	ます	か	??
+RECORD_START	-1	野菜	が	煮え	ます	か	??
+RECORD_START	-1	カレー	は	食べる	の	が	美味しい	です	ね
+RECORD_START	-1	カレー	は	辛い	の	が	美味しい	です	ね
+RECORD_START	-1	カレー	は	美味しい	です	ね
+RECORD_START	-1	カレー	は	まろやか	です	ね
+RECORD_START	-1	雨	は	優しい	です	ね
+RECORD_START	-1	雨	は	辛い	です	か
+RECORD_START	-1	雨	は	大丈夫	です	ね
+RECORD_START	-1	朝	から	プール	に	行き	ます	か
+RECORD_START	-1	プール	が	良い	です	ね
+RECORD_START	-1	気持ち	が	いい	です	ね
+RECORD_START	-1	プール	は	欲しい	です	ね
+RECORD_START	-1	プール	は	無理	です
+RECORD_START	-1	プール	で	疲れる	の	です
+RECORD_START	-1	プール	で	泳ぎ	たい	の	です
+RECORD_START	-1	朝	から	プール	で	泳ぎ	ます	よ	ねー
+RECORD_START	-1	プール	で	泳ぎ	たい	です	よ	ねえ
+RECORD_START	-1	プール	で	泳げ	ます	よ	ねー
+RECORD_START	-1	ゲーム	に	夢中	です	か
+RECORD_START	-1	夢中	で	撮影	を	忘れ	ます	??
+RECORD_START	-1	ゲーム	から	遠ざかり	ます
+RECORD_START	-1	ゲーム	を	愛し	ます
+RECORD_START	-1	ゲーム	で	泣く	の	です
+RECORD_START	-1	ゲーム	は	大事	です
+RECORD_START	-1	やる	の	が	いい	です	ね
+RECORD_START	-1	ゲーム	は	楽しい	です	ね
+RECORD_START	-1	ゲーム	で	疲れる	予定	です
+RECORD_START	-1	ありがとう	ござい	ます
+RECORD_START	-1	からす
+RECORD_START	-1	カラス	が	空	を	飛び	ます	よ	ねー
+RECORD_START	-1	遠く	まで	飛ぶ	と	いい	です	ね
+RECORD_START	-1	ありがとう	ござい	ます
+RECORD_START	-1	色々	と
+RECORD_START	-1	はい
+RECORD_START	-1	泣い	た
+RECORD_START	-1	空	は	眠い	です	よ	ねー
+RECORD_START	-1	空	は	不機嫌	です	よ	ねー
+RECORD_START	-1	空	は	不機嫌	です
+RECORD_START	-1	こんにちは	こんにちは
+RECORD_START	-1	元気	です	よ
+RECORD_START	-1	ちょうど	、	手	が	空い	た	ところ	です	。
+RECORD_START	-1	あなた	は	何	し	て	た	ん	です	か
+RECORD_START	-1	自由度	が	高い	です	ね
+RECORD_START	-1	ゲーム	は	評価	が	高い	です	ね
+RECORD_START	-1	ゲーム	は	完成度	が	高い	です	ね
+RECORD_START	-1	ゲーム	は	レベル	が	高い	です	ね
+RECORD_START	-1	RPG	は	FF	が	好き	です	ね
+RECORD_START	-1	ありがとう
+RECORD_START	-1	大学	で	続け	て	ます	か	?
+RECORD_START	-1	家	なう
+RECORD_START	-1	かえれ
+RECORD_START	-1	ちっ
+RECORD_START	-1	たまに	はいい	です	ね	。
+RECORD_START	-1	残念	。	。
+RECORD_START	-1	残念	でし	た	ね
+RECORD_START	-1	うん
+RECORD_START	-1	ただいま
+RECORD_START	-1	え	じゃ	ない	から
+RECORD_START	-1	ところで	、	ユニバーサル・スタジオ・ジャパン	が	、	昨年	の	夏	に	好評	だっ	た	カプコン	の	人気ゲーム	ソフト	の	世界	を	再現	し	た	「	バイオハザード	・	サ・リアル	2	」	を	11月9日	まで	復活	さ	せる	そう	です	。
+RECORD_START	-1	はい
+RECORD_START	-1	ところで	、	11日	、	第	96回	全国高校野球選手権大会	が	台風11号	の	影響	で	二	日	遅れ	て	甲子園球場	で	開幕	し	、	決勝	は	25日	の	予定	だ	そう	です	。
+RECORD_START	-1	東京国立	競技場	で	行っ	て	ます	よ
+RECORD_START	-1	甲子園球場	で	沖縄	が	行わ	れる	らしい	です
+RECORD_START	-1	沖縄	で	海	に	行く	よう	です	よ
+RECORD_START	-1	いき	た	ー	い
+RECORD_START	-1	海	は	楽しい	です	ね
+RECORD_START	-1	サーフィン	は	する	の	が	おもしろい	です	ね
+RECORD_START	-1	サーフィン	は	楽しい	です	ね
+RECORD_START	-1	海	は	楽しい	です	ね
+RECORD_START	-1	海	は	好き	です	ね
+RECORD_START	-1	気持ち	が	え	い	です	けど	ねぇ
+RECORD_START	-1	海	は	気持ち	が	え	い	です
+RECORD_START	-1	良かっ	た
+RECORD_START	-1	だ	な
+RECORD_START	-1	おす
+RECORD_START	-1	いつ	で	も
+RECORD_START	-1	うす	に	行き	ましょ	う	ね
+RECORD_START	-1	楽しみ	です
+RECORD_START	-1	好き	な	料理	は	何	です	か	?
+RECORD_START	-1	料理	は	得意	です	ね
+RECORD_START	-1	夕食	は	部屋	食	が	いい	です	よ	ねー
+RECORD_START	-1	夕食	は	部屋	食	が	いい	です	ね
+RECORD_START	-1	和食	が	いい	です	ね
+RECORD_START	-1	和食	は	いい	です	ね
+RECORD_START	-1	和食	は	素晴らしい	です	ね
+RECORD_START	-1	和食	は	奥	が	深い	です	ね
+RECORD_START	-1	奥	が	ホント	に	深い	です
+RECORD_START	-1	奥	が	想像	以上	に	深い	です
+RECORD_START	-1	何	か	ペット	を	飼っ	て	ます	か	?
+RECORD_START	-1	ピグ	内	で	飼い	ます	??
+RECORD_START	-1	ピグ	は	エラー	が	多い	です	か
+RECORD_START	-1	アメーバピグ	に	参加	です	よ	ねえ
+RECORD_START	-1	ペット	は	言葉	が	話せる	かも	しれ	ない
+RECORD_START	-1	ペット	から	離れる	かも	しれ	ない
+RECORD_START	-1	タクシー	が	大好き	です	ね
+RECORD_START	-1	方向	が	一緒	です	けど	ねぇ
+RECORD_START	-1	車	で	買い	に	行く	の	です
+RECORD_START	-1	さん	きゅう
+RECORD_START	-1	熱中症	に	気	を	つけ	て	たい	です	か	?
+RECORD_START	-1	熱中症	が	心配	さ	れ	ます	??
+RECORD_START	-1	クーラー	は	快適	です	ね
+RECORD_START	-1	レモン	味	が	好き	です	ね
+RECORD_START	-1	宇治金時	を	選ん	でる	ん	です
+RECORD_START	-1	イチゴ	は	中	に	入れる	の	です
+RECORD_START	-1	イチゴ	は	酸味	が	少ない	です	よ	ねえ
+RECORD_START	-1	酸味	が	足り	ませ	ん	よ	ねー
+RECORD_START	-1	果物	の	中	で	イチゴ	が	好き	です	ね
+RECORD_START	-1	りんご	は	好き	です	ね
+RECORD_START	-1	はい
+RECORD_START	-1	泳ぐ	を	繰り返す	ん	です	ね	?
+RECORD_START	-1	泳ぐ	を	覚える	の	でしょ	う	か	ね
+RECORD_START	-1	どんな	話	です	か	?
+RECORD_START	-1	いい	です	ねー	!
+RECORD_START	-1	クロール	が	うまい	です	ね
+RECORD_START	-1	平泳ぎ	は	上手	に	泳ぐ	の	です
+RECORD_START	-1	日	が	海	に	沈ん	でる	ん	です
+RECORD_START	-1	夕日	が	沈む	の	です
+RECORD_START	-1	可愛い
+RECORD_START	-1	朝	から	海	に	行き	ます	か	??
+RECORD_START	-1	沖縄	で	行き	ます	??
+RECORD_START	-1	行く
+RECORD_START	-1	ハワイ	は	楽しい	です	ね
+RECORD_START	-1	うん
+RECORD_START	-1	学会	に	参加	な	ん	です	よ	ねー
+RECORD_START	-1	そう	な	ん	です	よ	、
+RECORD_START	-1	でしょ
+RECORD_START	-1	それ	は	お疲れ様	でし	た
+RECORD_START	-1	どんまい
+RECORD_START	-1	こんばんは	ー	。	声	かけ	て	くれる	の	を	待っ	て	たん	だ	。
+RECORD_START	-1	趣味	が	高じ	ます
+RECORD_START	-1	趣味	は	小説	を	書き	ます
+RECORD_START	-1	小説	が	書け	ます
+RECORD_START	-1	小説	に	はまり	ます
+RECORD_START	-1	小説	は	必要	です
+RECORD_START	-1	や	だ	もん
+RECORD_START	-1	ありがとう	ござい	ます
+RECORD_START	-1	小説	は	登場人物	が	多い	です	か
+RECORD_START	-1	サンキュー
+RECORD_START	-1	今	健康	で	いらっしゃい	ます	か	?
+RECORD_START	-1	自身	に	満ち	て	ます	??
+RECORD_START	-1	癌	は	早期	発見	が	出来	ます	か	?
+RECORD_START	-1	早期	発見	は	難しい	です	ね
+RECORD_START	-1	生存	率	が	高い	です	ね
+RECORD_START	-1	長生き	が	良い	です	ね
+RECORD_START	-1	好き	です
+RECORD_START	-1	楽しみ	です
+RECORD_START	-1	健康法	は	会話	が	生まれる	の	です
+RECORD_START	-1	お笑い	は	くだらない	です
+RECORD_START	-1	何	か	お話	し	たい	こと	あり	ます	か	?
+RECORD_START	-1	ご	趣味	は	なんか	あり	ます	?
+RECORD_START	-1	泳ぐ	を	覚える	の	です
+RECORD_START	-1	それ	は	いい	です	ね
+RECORD_START	-1	わあ	!	いい	です	ね	!
+RECORD_START	-1	泳ぐ	を	繰り返す	の	です
+RECORD_START	-1	泳ぐ	を	繰り返し	てる	の	です	か	?
+RECORD_START	-1	泳ぐ	を	覚える	ん	です	か	?
+RECORD_START	-1	スポーツ	を	み	ます	ねぇ
+RECORD_START	-1	テレビ	で	見	て	ない	です	ね
+RECORD_START	-1	クラゲ	が	いい	です	ね
+RECORD_START	-1	加茂水族館	は	クラゲ	が	有名	です	ね
+RECORD_START	-1	一緒に	映画	を	見る	予定	です
+RECORD_START	-1	映画	は	二人	で	見る	予定	です
+RECORD_START	-1	デート	が	楽しみ	です	ね
+RECORD_START	-1	デート	は	楽しい	です	ね
+RECORD_START	-1	デート	が	楽しみ	です	か
+RECORD_START	-1	車	で	遠出	し	ます	か	?
+RECORD_START	-1	車	は	カッ	コイ	い	です	ね
+RECORD_START	-1	車	は	大好き	です	ね
+RECORD_START	-1	どんな	本	を	読ま	れ	ます	か	?
+RECORD_START	-1	どんな	音楽	が	お	好き	です	か	?
+RECORD_START	-1	ブラックビスケッツ	が	懐かしい	です	ね
+RECORD_START	-1	ブラックビスケッツ	を	さ	せ	ます	??
+RECORD_START	-1	ダンス	を	終え	ます	か	??
+RECORD_START	-1	ダンス	から	離れ	ます	か	?
+RECORD_START	-1	ダンス	から	遠ざかり	ます	??
+RECORD_START	-1	エアロビ	は	楽しい	です	ね
+RECORD_START	-1	男	を	喜ば	せ	ます	??
+RECORD_START	-1	女	は	大事	です	ね
+RECORD_START	-1	何	か体	に	いい	こと	し	て	ます	か	?
+RECORD_START	-1	好き	な	食事	とか	あり	ます	?
+RECORD_START	-1	食べる	の	が	好き	です	か
+RECORD_START	-1	焼肉	は	タン	塩	が	好き	です	か
+RECORD_START	-1	焼肉	屋	で	食べ	ます	よ	ねー
+RECORD_START	-1	カルビ	が	大好き	です	ね
+RECORD_START	-1	カルビ	は	好き	です	ね
+RECORD_START	-1	ホルモン	は	ヘルシー	です	ね
+RECORD_START	-1	ホルモン	は	美味しい	です	ね
+RECORD_START	-1	ホルモン	は	奥	が	深い	です	ね
+RECORD_START	-1	スイカ	で	有名	か	??
+RECORD_START	-1	スイカ	は	半分	に	切る	の	です
+RECORD_START	-1	スイカ	は	食べ	やすい	です	ね
+RECORD_START	-1	スイカ	に	かぶりつい	てる	の	です	か	?
+RECORD_START	-1	スイカ	は	実	が	大きい	です	ね
+RECORD_START	-1	スイカ	は	面白い	です	ね
+RECORD_START	-1	スイカ	は	大好き	です	ね
+RECORD_START	-1	スイカ	で	買い物	できる	らしい	です	よ
+RECORD_START	-1	物々交換	に	行く	らしい	です
+RECORD_START	-1	スイカ	が	落ちる	の	です
+RECORD_START	-1	退屈	に	なり	がち	よ	ねえ
+RECORD_START	-1	ごめんなさい
+RECORD_START	-1	スポーツ	は	盛ん	です
+RECORD_START	-1	スポーツ	は	奥深い	です	ね
+RECORD_START	-1	プレイ	は	上手い	です	ね
+RECORD_START	-1	プレイ	は	普通	です
+RECORD_START	-1	スポーツ	は	ファッショナブル	に	楽しん	だり	とかし	ます
+RECORD_START	-1	まじ	か
+RECORD_START	-1	まじ	だ	よ
+RECORD_START	-1	いい	です	ね
+RECORD_START	-1	退屈	に	耐え	られ	て	ないか	も
+RECORD_START	-1	うん
+RECORD_START	-1	退屈	は	嫌	な	ん	です	よ	ねえ
+RECORD_START	-1	うん
+RECORD_START	-1	退屈	は	心の哲学	です	ね
+RECORD_START	-1	心の哲学	を	扱う	そう	です
+RECORD_START	-1	退屈	を	紛らわせる	らしい	です	よ
+RECORD_START	-1	いい	なあ	!
+RECORD_START	-1	色々	と
+RECORD_START	-1	心の哲学	を	扱う	ん	です	ね	?
+RECORD_START	-1	こんにちは
+RECORD_START	-1	鮑	を	取り	ます	か	??
+RECORD_START	-1	鮑	は	美味しい	です	ね
+RECORD_START	-1	魚介類	は	鮮度	が	大事	です	ね
+RECORD_START	-1	鮮度	が	命	な	ん	です	が	ねぇ
+RECORD_START	-1	海辺	が	懐かしい	です	ね
+RECORD_START	-1	お	魚	が	美味しい	です	ね
+RECORD_START	-1	しゃぶしゃぶ	は	豚しゃぶ	が	好き	です	ね
+RECORD_START	-1	豚肉	が	好き	です	ね
+RECORD_START	-1	豚肉	は	ヘルシー	です	か
+RECORD_START	-1	そう	だ	よ
+RECORD_START	-1	お	疲れ	さん	です	。
+RECORD_START	-1	退屈	で	眠い	です
+RECORD_START	-1	退屈	で	疲れる	の	です
+RECORD_START	-1	疲れ	は	心地	が	良い	です	ね
+RECORD_START	-1	ありがとう
+RECORD_START	-1	疲れ	が	ピーク	に	達し	て	ます	か	?
+RECORD_START	-1	気持ち	が	いい	です	ね
+RECORD_START	-1	疲れ	は	心地よい	です	ね
+RECORD_START	-1	ふ	ぇ
+RECORD_START	-1	退屈	は	嫌	か
+RECORD_START	-1	退屈	を	嫌い	ます	よ	ねえ
+RECORD_START	-1	退屈	に	耐え	ます	よ	ねえ
+RECORD_START	-1	ふるさと	で	過ごし	ます
+RECORD_START	-1	車	から	離れ	ます
+RECORD_START	-1	いい	です	ねぇ
+RECORD_START	-1	ふるさと	は	懐かしい	です	ね
+RECORD_START	-1	放射線量	が	低い	です	ね
+RECORD_START	-1	ウォーターサーバー	は	便利	です	ね
+RECORD_START	-1	じゃぁ	鍋	の	汁	と	熱湯	飲ん	だ	らいい	じゃん
+RECORD_START	-1	いつも	どの	チャンネル	見	て	ます	か	?
+RECORD_START	-1	テレビ	で	やっ	て	い	た	の	を	見	ます	か	??
+RECORD_START	-1	テレビ	は	スペシャル	番組	が	多い	です	ね
+RECORD_START	-1	スペシャル	番組	が	つまらない	です	ね
+RECORD_START	-1	スペシャル	番組	で	つまんない	です
+RECORD_START	-1	スペシャル	番組	が	つまらない	です
+RECORD_START	-1	ニュース番組	で	犠牲	の	大き	さ	を	知る	ん	です	よ	ねぇ
+RECORD_START	-1	ニュース番組	で	犠牲	の	大き	さ	を	知っ	てる	ん	です	ね
+RECORD_START	-1	ニュース番組	で	犠牲	の	大き	さ	を	知る	の	でしょ	う	か	ね
+RECORD_START	-1	ニュース番組	が	流れる	の	でしょ	う	か	ね
+RECORD_START	-1	海	に	行か	ない	ん	です	ね	?
+RECORD_START	-1	えー
+RECORD_START	-1	海	は	大丈夫	です	ね
+RECORD_START	-1	仕事	帰り	に	泳ぐ	予定	です
+RECORD_START	-1	プール	で	泳げる	ん	でしょ	う	か
+RECORD_START	-1	プール	は	大好き	です	ね
+RECORD_START	-1	温泉	は	気持ち	が	いい	です	ね
+RECORD_START	-1	温泉	は	いい	です	ね
+RECORD_START	-1	温泉	は	冬	が	いい	そう	です	よ
+RECORD_START	-1	美肌	効果	が	高い	とか
+RECORD_START	-1	朝	から	海	に	行き	ます	か	??
+RECORD_START	-1	海	まで	散歩	に	行き	ます	か	?
+RECORD_START	-1	海	は	一人	で	行っ	て	ます	?
+RECORD_START	-1	海	は	透明度	が	良い	です	ね
+RECORD_START	-1	梅雨	が	良	さ	そう	です	ね
+RECORD_START	-1	梅雨	は	大事	です	ね
+RECORD_START	-1	気持ち	が	悪い	です	ね
+RECORD_START	-1	湿度	は	高め	が	いい	です	ね
+RECORD_START	-1	湿度	は	大丈夫	です	ね
+RECORD_START	-1	雨	は	大丈夫	です	ね
+RECORD_START	-1	熱中症	に	気	を	つけ	ない	ん	です	か	?
+RECORD_START	-1	あり	が	とー
+RECORD_START	-1	熱中症	に	気	を	つけ	て	たい	です	か	?
+RECORD_START	-1	熱中症	に	気をつけ	か	??
+RECORD_START	-1	お疲れ様
+RECORD_START	-1	いえ	い	えー
+RECORD_START	-1	熱中症	は	危険	か
+RECORD_START	-1	熱中症	に	注意	する	の	でしょ	う	か	?
+RECORD_START	-1	ID	教え	て	ー
+RECORD_START	-1	そう	か
+RECORD_START	-1	スイカ	で	買い物	でき	てる	の	です	か	?
+RECORD_START	-1	一人	が	いい	です	ね
+RECORD_START	-1	買い物	は	女同士	が	いい	です	ね
+RECORD_START	-1	一人	が	いい	です	よ	ねえ
+RECORD_START	-1	価値観	は	一緒	が	いい	です	ね
+RECORD_START	-1	価値観	は	欲しい	です	ね
+RECORD_START	-1	価値観	は	正しい	です	ね
+RECORD_START	-1	価値観	は	良い	です	ね
+RECORD_START	-1	一緒	は	居心地	が	いい	です	ね
+RECORD_START	-1	居心地	が	スキルアップ	の	ため	に	いい	です	ね
+RECORD_START	-1	おはよう	にこ
+RECORD_START	-1	暑い	です	ね
+RECORD_START	-1	好きな人	は	い	ます	か	?
+RECORD_START	-1	一途	に	想い	ます
+RECORD_START	-1	お	声	が	かかる	の	を	待っ	て	い	まし	た	。
+RECORD_START	-1	どういたしまして	ー
+RECORD_START	-1	好きな人	は	映画	に	誘っ	てる	の	です	か	?
+RECORD_START	-1	誘っ	て	ない
+RECORD_START	-1	いいねぇ
+RECORD_START	-1	なんとなく
+RECORD_START	-1	話し相手	は	多い	です	よ	ねえ
+RECORD_START	-1	話し相手	に	なり	たい	です	よ	ねー
+RECORD_START	-1	話し相手	は	欲しい	です	ね
+RECORD_START	-1	話し相手	に	飢え	ます
+RECORD_START	-1	話し相手	が	出来	たり	とかし	ます
+RECORD_START	-1	まったく	です
+RECORD_START	-1	初耳	です	。
+RECORD_START	-1	初耳	です	。
+RECORD_START	-1	いい	なあ	!
+RECORD_START	-1	それ	は	残念
+RECORD_START	-1	やぁ
+RECORD_START	-1	熱中症	に	気	を	つけ	たい	の	です
+RECORD_START	-1	熱中症	に	気	を	つけ	ない	な
+RECORD_START	-1	予防	が	大切	です	ね
+RECORD_START	-1	手洗い	うがい	で	予防	が	大切	です	ね
+RECORD_START	-1	病気	から	体	を	守り	ます	よ	ねえ
+RECORD_START	-1	スポーツ	から	離れ	て	ます	ねぇ
+RECORD_START	-1	スポーツ	は生	で	見る	かも	しれ	ない
+RECORD_START	-1	スポーツ	は生	で	見	ます	ねぇ
+RECORD_START	-1	スポーツ	は	結果	が	すべり	ます	ねぇ
+RECORD_START	-1	うーっす
+RECORD_START	-1	テレビ	は	よく	観	ます	か	?
+RECORD_START	-1	うん
+RECORD_START	-1	興味	が	ある	わけ	で	は	ない	です	ね
+RECORD_START	-1	興味	が	あろう	が	ない	です	か
+RECORD_START	-1	そうですね	。
+RECORD_START	-1	全体的	に
+RECORD_START	-1	わーい	!	喜んで	いただけ	まし	た	!
+RECORD_START	-1	いい	です	ね	。
+RECORD_START	-1	わかん	ない
+RECORD_START	-1	おはよう	ござい	ます	寒い	です
+RECORD_START	-1	足元	が	冷え	ます	か	??
+RECORD_START	-1	足元	を	み	ます	??
+RECORD_START	-1	足下	から	冷え込み	ます	??
+RECORD_START	-1	足下	で	寝	て	ます	か	?
+RECORD_START	-1	足下	を	掘り	ます	か	??
+RECORD_START	-1	アルコール	の	力	で	足下	が	おぼつかない	です	ね
+RECORD_START	-1	足下	で	暴れ	ます	よ	ねえ
+RECORD_START	-1	足下	で	暴れ	ます
+RECORD_START	-1	うん
+RECORD_START	-1	熱中症	に	気	を	つけ	て	たい	です	か	?
+RECORD_START	-1	熱中症	はいい	です	ね
+RECORD_START	-1	熱中症	は	注意	が	必要	です
+RECORD_START	-1	熱中症	は	危険	です
+RECORD_START	-1	熱中症	は	大丈夫	です
+RECORD_START	-1	熱中症	が	心配	さ	れる	の	です
+RECORD_START	-1	熱中症	に	気	を	つけ	ない	な
+RECORD_START	-1	お願い	し	ます
+RECORD_START	-1	熱中症	で	ぶっ	倒れ	て	ます	か	?
+RECORD_START	-1	熱中症	を	起こし	て	ます	か	?
+RECORD_START	-1	夏	が	終わり	ます
+RECORD_START	-1	よし	よし
+RECORD_START	-1	22時	です
+RECORD_START	-1	夏バテ	は	大丈夫	です	ね
+RECORD_START	-1	すっごい	心配	だ	けど	、	ほんと	ただ	の	夏バテ	なら	いい	なぁ	。
+RECORD_START	-1	どういたしまして
+RECORD_START	-1	食欲	は	ムラ	が	あるき	ます	が	ね
+RECORD_START	-1	体重	が	落ちる	ん	です	よ	ねぇ
+RECORD_START	-1	体重	は	軽	め	です	ね
+RECORD_START	-1	体重	は	順調	です	ね
+RECORD_START	-1	そう	です
+RECORD_START	-1	うん
+RECORD_START	-1	質問	の	答え	を	ご	用意	し	て	い	ます	。
+RECORD_START	-1	今日	は	なに	か	美味しい	もの	で	食べ	られ	まし	た	か
+RECORD_START	-1	ところで	、	1991年	以降	に	進ん	だ	氷河	減少	の	原因	の	約	7割	は	、	二酸化炭素	の	排出	など	人間活動	による	地球温暖化	が	原因	だ	と	する	解析	結果	を	オーストリア	と	カナダ	の	研究	チーム	が	まとめ	、	アメリカ	の	科学	誌	サイエンス	に	発表	し	た	そう	です	。
+RECORD_START	-1	アメリカ	は	国土	が	広	よう	です
+RECORD_START	-1	土	が	良い	です	ね
+RECORD_START	-1	土	は	荒い	よう	です
+RECORD_START	-1	土	は	細かい	らしい	です	よ
+RECORD_START	-1	土	は	寒い	よう	です
+RECORD_START	-1	ぬいぐるみ	は	肌触り	が	いい	です	ね
+RECORD_START	-1	いい	感じ	です	。
+RECORD_START	-1	ぬいぐるみ	は	大好き	です	ね
+RECORD_START	-1	水族館	は	楽しい	です	ね
+RECORD_START	-1	水族館	は	好き	です	ね
+RECORD_START	-1	水族館	で	有名	です	ね
+RECORD_START	-1	海遊館	は	楽しい	です	ね
+RECORD_START	-1	海遊館	は	ジンベイザメ	が	有名	です	ね
+RECORD_START	-1	美ら海水族館	が	好き	です	ね
+RECORD_START	-1	美ら海水族館	は	よい	です	ね
+RECORD_START	-1	退屈	は	嫌	か
+RECORD_START	-1	退屈	で	しかた	ない	です	か
+RECORD_START	-1	退屈	で	しょうが	ない	です	か
+RECORD_START	-1	退屈	で	眠い	です	か
+RECORD_START	-1	仕事	は	奥	が	深い	です	ね
+RECORD_START	-1	仕事	は	丁寧	です	ね
+RECORD_START	-1	仕事	は	転職	の	ため	に	辞め	てる	よう	です
+RECORD_START	-1	いっぱい	で	辞め	てる	よう	です
+RECORD_START	-1	仕事	は	しんどい	らしい	です	よ
+RECORD_START	-1	仕事	は	暇	な	よう	です	よ
+RECORD_START	-1	スイカ	は	実	が	大きい	です	ね
+RECORD_START	-1	梨	は	幸水	が	好き	です	ね
+RECORD_START	-1	幸水	は	美味しい	です	ね
+RECORD_START	-1	桃	は	美味しい	です	ね
+RECORD_START	-1	食べる	の	が	おいしい	です	ね
+RECORD_START	-1	桃	は生	が	おいしい	です	ね
+RECORD_START	-1	タルト	は	キルフェボン	が	美味しい	です	ね
+RECORD_START	-1	キルフェボン	は	美味しい	です	ね
+RECORD_START	-1	キルフェボン	の	ケーキ	って	高い	ん	だ	ね	。
+RECORD_START	-1	キルフェボン	の	タルト	は	やばい
+RECORD_START	-1	朝	から	海	に	行き	ます	か	??
+RECORD_START	-1	海	は	楽しい	です	ね
+RECORD_START	-1	海	は	穏やか	です	ね
+RECORD_START	-1	海	は	大丈夫	です	ね
+RECORD_START	-1	油断	は	やばい	です	よ	ねー
+RECORD_START	-1	油断	が	怖い	です
+RECORD_START	-1	スキューバ	に	行き	たい	の	です
+RECORD_START	-1	スキューバ	に	行っ	た	こと	あり	ます
+RECORD_START	-1	スキューバ	の	Never	を	聴く	と	感動	し	ます
+RECORD_START	-1	never	に	行き	たい	そう	です
+RECORD_START	-1	退屈	は	嫌	か
+RECORD_START	-1	退屈	で	しかた	ない	です	か
+RECORD_START	-1	退屈	に	耐え	て	ます	か	?
+RECORD_START	-1	です	よ	ね
+RECORD_START	-1	退屈	は	心の哲学	です	ね
+RECORD_START	-1	アリストテレス	は	中庸	が	大事	な	ん	です	よ	ねえ
+RECORD_START	-1	中庸	が	大事	か	??
+RECORD_START	-1	中庸	が	大事	です	ね
+RECORD_START	-1	なんで	ってな	ん	で
+RECORD_START	-1	好きな人	は	怖い	です
+RECORD_START	-1	よく	旅行	する	ん	です	か	?
+RECORD_START	-1	旅行	が	出来	て	ます	??
+RECORD_START	-1	旅行	が	出来	た	こと	あり	ます	よ
+RECORD_START	-1	旅行	で	疲れ	て	た	こと	あり	ます
+RECORD_START	-1	旅行	で	休ん	だ	こと	あり	ます
+RECORD_START	-1	咳	が	残り	ます
+RECORD_START	-1	風邪	で	行き	ます
+RECORD_START	-1	熱	は	大丈夫	です	ね
+RECORD_START	-1	脱水	症状	なんか	頭	痛いー
+RECORD_START	-1	脱水	症状	は	酷い	です	か
+RECORD_START	-1	おう
+RECORD_START	-1	お家	で	作り	ます
+RECORD_START	-1	おかず	が	入り	ます
+RECORD_START	-1	肉	は	火	が	入り	ます
+RECORD_START	-1	魚	は	グリル	で	焼き	ます
+RECORD_START	-1	グリル	は	いい	です	ね
+RECORD_START	-1	グリル	は	火力	が	強い	です	ね
+RECORD_START	-1	火力	が	強い	です
+RECORD_START	-1	火力	は	弱い	です
+RECORD_START	-1	そう	し	ましょ	う
+RECORD_START	-1	どうも	こんばんは
+RECORD_START	-1	何	か	普段	の	生活	で	気	を	つけ	て	いる	こと	は	あり	ます	か	。
+RECORD_START	-1	水分	は	多め	が	いい	です	ね
+RECORD_START	-1	水分	は	一緒	に	摂っ	たり	と	か	です
+RECORD_START	-1	水分	は	たっぷり	です
+RECORD_START	-1	キャベツ	から	水分	が	出る	の	です
+RECORD_START	-1	水分	が	出	ます
+RECORD_START	-1	トマト	から	水分	が	出	ます
+RECORD_START	-1	トマト	は	芽	が	出	ます
+RECORD_START	-1	トマト	から	水	が	出	ます
+RECORD_START	-1	あなた	は	いくつ	です	か
+RECORD_START	-1	いくつ	の	海	は	どう	です	か	?
+RECORD_START	-1	海	が	綺麗	に	見える	そう	です	よ
+RECORD_START	-1	だろ
+RECORD_START	-1	夕日	が	いい	です	ね
+RECORD_START	-1	せ	やろ
+RECORD_START	-1	いえいえ	そんな
+RECORD_START	-1	いい	感じ	です	。
+RECORD_START	-1	どうでしょう	を	見	ませ	ん	か	??
+RECORD_START	-1	でしょ
+RECORD_START	-1	はい
+RECORD_START	-1	水分	が	無くなっ	て	ます	か	?
+RECORD_START	-1	汗	で	水分	が	出	ます	??
+RECORD_START	-1	うん
+RECORD_START	-1	顔	から	汗	が	出	ます	よ	ねえ
+RECORD_START	-1	です	よ	ね
+RECORD_START	-1	汗	で	化粧	が	落ち	ます	よ	ねー
+RECORD_START	-1	化粧	は	欲しい	です	ね
+RECORD_START	-1	ごちそうさま
+RECORD_START	-1	化粧	は	適当	です
+RECORD_START	-1	退屈	に	耐え	られ	て	ないか	も
+RECORD_START	-1	退屈	に	耐える	の	です
+RECORD_START	-1	一人	で	行き	ます
+RECORD_START	-1	カラオケ	は	二人	で	行く	の	です
+RECORD_START	-1	カラオケ	に	いき	ませ	ん	でし	た	ね
+RECORD_START	-1	初対面	で	良い	ところ	を	見せる	かも	しれ	ない
+RECORD_START	-1	第一印象	は	肝心	です
+RECORD_START	-1	第一印象	は	大事	だ	そう	です	よ
+RECORD_START	-1	第一印象	が	良く	ない	そう	です	よ
+RECORD_START	-1	ごめんなさいね	を	連発	する	よう	です
+RECORD_START	-1	ちー	す
+RECORD_START	-1	ヘイ	が	言い	ます
+RECORD_START	-1	いい	です	ねぇ
+RECORD_START	-1	ほんとに
+RECORD_START	-1	ホント	に
+RECORD_START	-1	ありがと
+RECORD_START	-1	わあ	!	いい	です	ね	!
+RECORD_START	-1	やっ	た
+RECORD_START	-1	いろいろ	ー
+RECORD_START	-1	うむ
+RECORD_START	-1	シャイ	で	照れ	屋	です	か
+RECORD_START	-1	照れ	屋	で	素直	に	なれ	ない	ん	です	ね
+RECORD_START	-1	照れ	屋	で	人見知り	です
+RECORD_START	-1	人見知り	で	口下手	です
+RECORD_START	-1	途切れる	の	が	不安	です
+RECORD_START	-1	口下手	で	会話	が	苦手	です
+RECORD_START	-1	感じ	は	怖い	です
+RECORD_START	-1	うん
+RECORD_START	-1	はい
+RECORD_START	-1	う	ぬ
+RECORD_START	-1	スイカ	は	実	が	大きい	です	ね
+RECORD_START	-1	桃	が	好き	です	ね
+RECORD_START	-1	それ	は	いい	です	ね
+RECORD_START	-1	イチゴ	は	ビタミンC	が	豊富	です	ね
+RECORD_START	-1	初耳	の	話	なら	いい	ねー
+RECORD_START	-1	九州大	好き	って	言葉	初耳	ね	。
+RECORD_START	-1	九州	は	温かい	です	ね
+RECORD_START	-1	九州	はいい	です	ね
+RECORD_START	-1	名物	が	多い	です	ね
+RECORD_START	-1	名物	が	多い	です
+RECORD_START	-1	スイカ	で	有名	です	ね
+RECORD_START	-1	パスモ	は	PASMO	です	ね
+RECORD_START	-1	パスモ	は	乗車カード	発行	団体	です	ね
+RECORD_START	-1	ワクワク	。
+RECORD_START	-1	ドキドキ
+RECORD_START	-1	ワクワク
+RECORD_START	-1	イコカ	で	近鉄	線	に	乗り	ます
+RECORD_START	-1	イコカ	は	通勤	の	際	に	使う	の	です
+RECORD_START	-1	関西	に	住み	たい	そう	です
+RECORD_START	-1	うん
+RECORD_START	-1	退屈	に	なり	がち	か
+RECORD_START	-1	退屈	は	心の哲学	です	ね
+RECORD_START	-1	はい	、	そう	です
+RECORD_START	-1	退屈	は	心	です	ね
+RECORD_START	-1	退屈	が	忌々しい	とか
+RECORD_START	-1	退屈	は	嫌	です	よ
+RECORD_START	-1	退屈	を	嫌う	らしい	です
+RECORD_START	-1	退屈	で	しかた	ない	らしい
+RECORD_START	-1	退屈	で	しょうが	ない	です
+RECORD_START	-1	天気	は	わか	ん	ない	です
+RECORD_START	-1	こんち	わ
+RECORD_START	-1	晴れ	て	よかっ	た	です	ね
+RECORD_START	-1	天気	が	ホント	に	良い	そう	です	よ
+RECORD_START	-1	うん
+RECORD_START	-1	天気	が	最高	に	良い	です	ね
+RECORD_START	-1	午後	から	雨	が	降り出し	ます	よ	ねえ
+RECORD_START	-1	雨	は	欲しい	です	ね
+RECORD_START	-1	雨	は	大切	です	ね
+RECORD_START	-1	雨	は	心地よい	です	ね
+RECORD_START	-1	雨	は	大丈夫	です	ね
+RECORD_START	-1	あなた	の	好き	な	映画	について	教え	て	ください
+RECORD_START	-1	アクション映画	は	好き	です	ね
+RECORD_START	-1	邦画	が	好き	です	ね
+RECORD_START	-1	ありがとう	ござい	ます
+RECORD_START	-1	そう	です	そう	です
+RECORD_START	-1	いい	です	ね
+RECORD_START	-1	いい	です	ね	!
+RECORD_START	-1	それ	は	いい	です	ね
+RECORD_START	-1	たしかに	そうですね
+RECORD_START	-1	なるほど!
+RECORD_START	-1	ヨット	が	海	に	浮かん	でる	ん	です	か	?
+RECORD_START	-1	海	を	横断	する	の	でしょ	う	か	?
+RECORD_START	-1	気持ち	が	え	い	です	けど	ねぇ
+RECORD_START	-1	です	よ	ねー
+RECORD_START	-1	海	は	大好き	です	ね
+RECORD_START	-1	いろいろ
+RECORD_START	-1	何	?
+RECORD_START	-1	海	は	穏やか	です	ね
+RECORD_START	-1	海	は	楽しい	です	ね
+RECORD_START	-1	おおう
+RECORD_START	-1	お化け	が	部屋	に	出	て	ます	か	?
+RECORD_START	-1	お化け	が	出	ないじゃないですか
+RECORD_START	-1	出	ます
+RECORD_START	-1	お化け	が	出	ない	らしい	です	よ
+RECORD_START	-1	どっち	も
+RECORD_START	-1	なに	が
+RECORD_START	-1	お化け	が	可愛い	です	ね
+RECORD_START	-1	お化け	は	欲しい	です	ね
+RECORD_START	-1	お化け	は	欲しい	です	よ	ねえ
+RECORD_START	-1	ガチ
+RECORD_START	-1	好き	な	料理	は	何	です	か	?
+RECORD_START	-1	イタリアン	は	好き	です	か
+RECORD_START	-1	知っ	てる
+RECORD_START	-1	料理	は	素晴らしい	です	ね
+RECORD_START	-1	料理	は	大切	です	ね
+RECORD_START	-1	同じく
+RECORD_START	-1	料理	は	脂っこい	です
+RECORD_START	-1	一時	的	な	食事制限	で	落とす	の	です
+RECORD_START	-1	ダイエット	は	し	づらい	です
+RECORD_START	-1	ダイエット	に	取り入れる	の	です
+RECORD_START	-1	冬瓜	の	煮物	おいしい
+RECORD_START	-1	うまかっ	た
+RECORD_START	-1	冬瓜	は	家庭	で	食べる	の	です
+RECORD_START	-1	ねー
+RECORD_START	-1	です	よ	ね	!
+RECORD_START	-1	堀越二郎	です
+RECORD_START	-1	堀越二郎	は	防衛大学校	の	教員	です	ね
+RECORD_START	-1	防衛大学校	に	勤め	てる	よう	です
+RECORD_START	-1	はい
+RECORD_START	-1	防衛大学校	に	通う	の	です
+RECORD_START	-1	スイカ	で	買い物	でき	てる	の	です	か	?
+RECORD_START	-1	イコカ	で	近鉄	線	に	乗る	ん	です	か	?
+RECORD_START	-1	大阪	から	新幹線	に	乗っ	て	ます	か	?
+RECORD_START	-1	京都	から	新幹線	に	乗り	ます	??
+RECORD_START	-1	京都	は	すばらしい	です	ね
+RECORD_START	-1	京都	で	有名	です	ね
+RECORD_START	-1	観光客	が	多い	です	ね
+RECORD_START	-1	見所	が	多い	です	ね
+RECORD_START	-1	買い物	は	大好き	です	ね
+RECORD_START	-1	お金	は	面白い	です	ね
+RECORD_START	-1	熱中症	に	気をつけ	か	??
+RECORD_START	-1	熱中症	が	心配	さ	れ	ます	??
+RECORD_START	-1	熱中症	を	疑い	ます	か	??
+RECORD_START	-1	予防	が	大切	です	ね
+RECORD_START	-1	予防	は	大切	です	ね
+RECORD_START	-1	手洗い	うがい	で	予防	が	大切	です
+RECORD_START	-1	手洗い	が	だす	の	です
+RECORD_START	-1	手洗い	は	めんどくさい	です
+RECORD_START	-1	効果	が	高い	です	ね
+RECORD_START	-1	実際	は	大きい	です	か
+RECORD_START	-1	終わり	は	欲しい	です	ね
+RECORD_START	-1	休み	は	欲しい	です	よ	ねー
+RECORD_START	-1	文句	は	かっこいい	です	ね
+RECORD_START	-1	文句	に	惹か	れ	ます	??
+RECORD_START	-1	何事	を	行っ	て	ます	?
+RECORD_START	-1	何事	が	あっ	て	も	ない	です	か
+RECORD_START	-1	平穏無事	はいい	です	ね
+RECORD_START	-1	平穏	無事	に	日々	を	過ごせ	ます	よ	ねえ
+RECORD_START	-1	平穏	無事	に	毎日	を	過ごせ	ます	よ	ねえ
+RECORD_START	-1	感謝	が	伝わり	ます	よ	ねー
+RECORD_START	-1	ねー
+RECORD_START	-1	なるほど	ー	!
+RECORD_START	-1	たしかに
+RECORD_START	-1	なるべく	なら	避け	たい	です	よ	ね	。
+RECORD_START	-1	好き	です
+RECORD_START	-1	愛	は	いい	です	よ	ねー
+RECORD_START	-1	愛	は	たっぷり	です	よ	ねー
+RECORD_START	-1	愛	は	いい	です	ね
+RECORD_START	-1	愛	は	大切	です
+RECORD_START	-1	愛	は	もろい	です
+RECORD_START	-1	かき氷	は	頭	が	なり	ます	か
+RECORD_START	-1	かき氷	を	ほおばり	ます	??
+RECORD_START	-1	二人	で	食べ	て	ます	か	?
+RECORD_START	-1	家族	は	好き	です	ね
+RECORD_START	-1	ゲーム	です
+RECORD_START	-1	ゲーム	は	大事	です	ね
+RECORD_START	-1	ゲーム	は	シナリオ	が	いい	です	ね
+RECORD_START	-1	音楽	が	いい	です	ね
+RECORD_START	-1	ゲーム	は	大丈夫	です	ね
+RECORD_START	-1	ゲーム	は	多い	です
