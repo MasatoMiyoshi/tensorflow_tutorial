@@ -6,6 +6,7 @@ import codecs
 import time
 import collections
 import math
+import json
 
 import numpy as np
 import tensorflow as tf
@@ -83,4 +84,20 @@ def save_hparams(out_dir, hparams):
     print_out("  saving hparams to %s" % hparams_file)
     with codecs.getwriter("utf-8")(tf.gfile.GFile(hparams_file, "wb")) as f:
         f.write(hparams.to_json())
+
+def load_hparams(model_dir):
+    """Load hparams from an existing model directory."""
+    hparams_file = os.path.join(model_dir, "hparams")
+    if tf.gfile.Exists(hparams_file):
+        print_out("# Loading hparams from %s" % hparams_file)
+        with codecs.getreader("utf-8")(tf.gfile.GFile(hparams_file, "rb")) as f:
+            try:
+                hparams_values = json.load(f)
+                hparams = tf.contrib.training.HParams(**hparams_values)
+            except ValueError:
+                print("  can't load hparams file")
+                return None
+            return hparams
+    else:
+        return None
 ### EOF

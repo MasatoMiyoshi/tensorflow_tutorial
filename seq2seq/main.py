@@ -248,8 +248,11 @@ def extend_hparams(hparams):
     return hparams
 
 def create_or_load_hparams(out_dir, default_hparams, save_hparams=True):
-    hparams = default_hparams
-    hparams = extend_hparams(hparams)
+    hparams = utils.load_hparams(out_dir)
+    if not hparams:
+        hparams = default_hparams
+        hparams = extend_hparams(hparams)
+
     # Save HParams
     if save_hparams:
         utils.save_hparams(out_dir, hparams)
