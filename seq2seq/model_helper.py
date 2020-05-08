@@ -33,7 +33,9 @@ def create_emb_for_encoder_and_decoder(share_vocab,
                                        tgt_embed_size,
                                        dtype=tf.float32,
                                        src_vocab_file=None,
-                                       tgt_vocab_file=None):
+                                       tgt_vocab_file=None,
+                                       src_embed_file=None,
+                                       tgt_embed_file=None):
     partitioner = None
 
     with tf.variable_scope("embeddings", dtype=dtype, partitioner=partitioner) as scope:
@@ -46,20 +48,47 @@ def create_emb_for_encoder_and_decoder(share_vocab,
             utils.print_out("# Use the same embedding for source and target")
             vocab_file = src_vocab_file or tgt_vocab_file
 
-            embedding_encoder = _create_or_load_embed("embedding_share", vocab_file, src_vocab_size, src_embed_size, dtype)
+            embedding_encoder = _create_or_load_embed("embedding_share", vocab_file, src_embed_file, src_vocab_size, src_embed_size, dtype)
             embedding_decoder = embedding_encoder
         else:
             with tf.variable_scope("encoder", partitioner=partitioner):
-                embedding_encoder = _create_or_load_embed("embedding_encoder", src_vocab_file, src_vocab_size, src_embed_size, dtype)
+                embedding_encoder = _create_or_load_embed("embedding_encoder", src_vocab_file, src_embed_file, src_vocab_size, src_embed_size, dtype)
             with tf.variable_scope("decoder", partitioner=partitioner):
-                embedding_decoder = _create_or_load_embed("embedding_decoder", tgt_vocab_file, tgt_vocab_size, tgt_embed_size, dtype)
+                embedding_decoder = _create_or_load_embed("embedding_decoder", tgt_vocab_file, tgt_embed_file, tgt_vocab_size, tgt_embed_size, dtype)
 
     return embedding_encoder, embedding_decoder
 
-def _create_or_load_embed(embed_name, vocab_file, vocab_size, embed_size, dtype):
-    with tf.device("/cpu:0"):
-        embedding = tf.get_variable(embed_name, [vocab_size, embed_size], dtype)
+def _create_or_load_embed(embed_name, vocab_file, embed_file,
+                          vocab_size, embed_size, dtype):
+    """Create a new or load an existing embedding matrix."""
+    if vocab_file and embed_file:
+        embedding = _create_pretrained_emb_from_txt(vocab_file, embed_file)
+    else:
+        with tf.device("/cpu:0"):
+            embedding = tf.get_variable(embed_name, [vocab_size, embed_size], dtype)
     return embedding
+
+def _create_pretrained_emb_from_txt(vocab_file, embed_file, num_trainable_tokens=3, dtype=tf.float32, scope=None):
+    """Load pretrain embedding from embed_file, and return an embedding matrix."""
+
+    vocab, _ = vocab_utils.load_vocab(vocab_file)
+    trainable_tokens = vocab[:num_trainable_tokens]
+
+    utils.print_out("# Using pretrained embedding: %s." % embed_file)
+    utils.print_out("  with trainable tokens: ")
+
+    emb_dict, emb_size = vocab_utils.load_embed_txt(embed_file)
+    for token in trainable_tokens:
+        utils.print_out("   %s" % token)
+        if token not in emb_dict:
+            emb_dict[token] = [0.0] * emb_size
+
+    emb_mat = np.array([emb_dict[token] for token in vocab], dtype=dtype.as_numpy_dtype())
+    emb_mat = tf.constant(emb_mat)
+    emb_mat_const = tf.slice(emb_mat, [num_trainable_tokens, 0], [-1, -1])
+    with tf.variable_scope(scope or "pretrain_embeddings", dtype=dtype) as scope:
+        emb_mat_var = tf.get_variable("emb_mat_var", [num_trainable_tokens, emb_size])
+    return tf.concat([emb_mat_var, emb_mat_const], 0)
 
 def create_rnn_cell(unit_type, num_units, num_layers, forget_bias, dropout, mode, single_cell_fn=None):
     cell_list = _cell_list(unit_type=unit_type,

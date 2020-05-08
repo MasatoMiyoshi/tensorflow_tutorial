@@ -59,4 +59,21 @@ def create_vocab_tables(src_vocab_file, tgt_vocab_file, share_vocab):
         tgt_vocab_table = lookup_ops.index_table_from_file(
             tgt_vocab_file, default_value=UNK_ID)
     return src_vocab_table, tgt_vocab_table
+
+def load_embed_txt(embed_file):
+    """Load embed_file into a python dictionary."""
+
+    emb_dict = dict()
+    emb_size = None
+    with codecs.getreader("utf-8")(tf.gfile.GFile(embed_file, 'rb')) as f:
+        for line in f:
+            tokens = line.strip().split("\t")
+            word = tokens[0]
+            vec = list(map(float, tokens[1:]))
+            emb_dict[word] = vec
+            if emb_size:
+                assert emb_size == len(vec), "All embedding size should be same."
+            else:
+                emb_size = len(vec)
+    return emb_dict, emb_size
 ### EOF

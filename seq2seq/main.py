@@ -25,6 +25,8 @@ def add_arguments(parse):
     parser.add_argument("--tgt_file", type=str, default=None)
     parser.add_argument("--src_vocab_file", type=str, default=None)
     parser.add_argument("--tgt_vocab_file", type=str, default=None)
+    parser.add_argument("--src_embed_file", type=str, default=None)
+    parser.add_argument("--tgt_embed_file", type=str, default=None)
     parser.add_argument("--out_dir", type=str, default=None, help="Store log/model files.")
 
     # Vocab
@@ -146,6 +148,8 @@ def create_hparams(flags):
         tgt_file=flags.tgt_file,
         src_vocab_file=flags.src_vocab_file,
         tgt_vocab_file=flags.tgt_vocab_file,
+        src_embed_file=flags.src_embed_file,
+        tgt_embed_file=flags.tgt_embed_file,
         out_dir=flags.out_dir,
         num_buckets=flags.num_buckets,
         max_train=flags.max_train,

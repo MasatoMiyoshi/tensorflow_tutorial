@@ -126,7 +126,9 @@ class BaseModel(object):
                 src_embed_size=hparams.num_units,
                 tgt_embed_size=hparams.num_units,
                 src_vocab_file=hparams.src_vocab_file,
-                tgt_vocab_file=hparams.tgt_vocab_file))
+                tgt_vocab_file=hparams.tgt_vocab_file,
+                src_embed_file=hparams.src_embed_file,
+                tgt_embed_file=hparams.tgt_embed_file))
 
     def build_graph(self, hparams):
         print("# createing %s graph ..." % self.mode)
